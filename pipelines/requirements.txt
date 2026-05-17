@@ -1,0 +1,5 @@
+pysus
+pandas
+pyarrow
+httpx
+datasus-dbc

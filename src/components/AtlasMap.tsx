@@ -102,8 +102,12 @@ export function AtlasMap(props: AtlasMapProps) {
     onSelectMun,
   } = props
 
-  // Lazy-load municípios per active state.
-  const [munGeo, setMunGeo] = useState<MunicipioGeoCollection | null>(null)
+  // Lazy-load municípios per active state. We track which UF the loaded data
+  // belongs to so we can derive freshness instead of resetting state inside
+  // the effect — keeps react-hooks/set-state-in-effect happy.
+  const [munGeoFor, setMunGeoFor] = useState<
+    { uf: string; geo: MunicipioGeoCollection } | null
+  >(null)
   const [loadingUF, setLoadingUF] = useState<string | null>(null)
   const targetUF =
     view.kind === 'estado'
@@ -112,18 +116,16 @@ export function AtlasMap(props: AtlasMapProps) {
         ? view.uf
         : null
 
+  const munGeo = munGeoFor?.uf === targetUF ? munGeoFor.geo : null
+
   useEffect(() => {
-    if (!targetUF) {
-      setMunGeo(null)
-      return
-    }
-    setMunGeo(null)
-    setLoadingUF(targetUF)
+    if (!targetUF) return
     let cancelled = false
+    setLoadingUF(targetUF)
     fetchMunicipiosGeo(targetUF)
       .then((g) => {
         if (cancelled) return
-        setMunGeo(g)
+        setMunGeoFor({ uf: targetUF, geo: g })
       })
       .catch((err) => {
         if (!cancelled) console.error(err)
@@ -203,7 +205,7 @@ export function AtlasMap(props: AtlasMapProps) {
   // touching React state, so animation frames don't trigger re-renders.
   const zoomMV = useTransform(
     [vw, vh] as MotionValue<number>[],
-    ([w, h]) => Math.min(W / Math.max(1, w), H / Math.max(1, h))
+    ([w, h]: number[]) => Math.min(W / Math.max(1, w), H / Math.max(1, h))
   )
 
   return (

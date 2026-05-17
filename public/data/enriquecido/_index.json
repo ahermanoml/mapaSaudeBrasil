@@ -1,0 +1,206 @@
+[
+  {
+    "ibge": 3100104,
+    "slug": "abadia_dos_dourados"
+  },
+  {
+    "ibge": 3100708,
+    "slug": "agua_comprida"
+  },
+  {
+    "ibge": 3103504,
+    "slug": "araguari"
+  },
+  {
+    "ibge": 3103751,
+    "slug": "arapora"
+  },
+  {
+    "ibge": 3104007,
+    "slug": "araxa"
+  },
+  {
+    "ibge": 3109808,
+    "slug": "cachoeira_dourada"
+  },
+  {
+    "ibge": 3111101,
+    "slug": "campina_verde"
+  },
+  {
+    "ibge": 3111408,
+    "slug": "campo_florido"
+  },
+  {
+    "ibge": 3111804,
+    "slug": "canapolis"
+  },
+  {
+    "ibge": 3112604,
+    "slug": "capinopolis"
+  },
+  {
+    "ibge": 3115003,
+    "slug": "cascalho_rico"
+  },
+  {
+    "ibge": 3115805,
+    "slug": "centralina"
+  },
+  {
+    "ibge": 3116902,
+    "slug": "comendador_gomes"
+  },
+  {
+    "ibge": 3117306,
+    "slug": "conceicao_das_alagoas"
+  },
+  {
+    "ibge": 3118205,
+    "slug": "conquista"
+  },
+  {
+    "ibge": 3119302,
+    "slug": "coromandel"
+  },
+  {
+    "ibge": 3120706,
+    "slug": "cruzeiro_da_fortaleza"
+  },
+  {
+    "ibge": 3121258,
+    "slug": "delta"
+  },
+  {
+    "ibge": 3123502,
+    "slug": "douradoquara"
+  },
+  {
+    "ibge": 3124807,
+    "slug": "estrela_do_sul"
+  },
+  {
+    "ibge": 3127008,
+    "slug": "fronteira"
+  },
+  {
+    "ibge": 3127107,
+    "slug": "frutal"
+  },
+  {
+    "ibge": 3127909,
+    "slug": "grupiara"
+  },
+  {
+    "ibge": 3128907,
+    "slug": "guimarania"
+  },
+  {
+    "ibge": 3129103,
+    "slug": "gurinhata"
+  },
+  {
+    "ibge": 3129509,
+    "slug": "ibia"
+  },
+  {
+    "ibge": 3130705,
+    "slug": "indianopolis"
+  },
+  {
+    "ibge": 3131406,
+    "slug": "ipiacu"
+  },
+  {
+    "ibge": 3131604,
+    "slug": "irai_de_minas"
+  },
+  {
+    "ibge": 3133402,
+    "slug": "itapagipe"
+  },
+  {
+    "ibge": 3134202,
+    "slug": "ituiutaba"
+  },
+  {
+    "ibge": 3142809,
+    "slug": "monte_alegre_de_minas"
+  },
+  {
+    "ibge": 3143104,
+    "slug": "monte_carmelo"
+  },
+  {
+    "ibge": 3145000,
+    "slug": "nova_ponte"
+  },
+  {
+    "ibge": 3148004,
+    "slug": "patos_de_minas"
+  },
+  {
+    "ibge": 3148103,
+    "slug": "patrocinio"
+  },
+  {
+    "ibge": 3149200,
+    "slug": "pedrinopolis"
+  },
+  {
+    "ibge": 3149804,
+    "slug": "perdizes"
+  },
+  {
+    "ibge": 3150703,
+    "slug": "pirajuba"
+  },
+  {
+    "ibge": 3151602,
+    "slug": "planura"
+  },
+  {
+    "ibge": 3152808,
+    "slug": "prata"
+  },
+  {
+    "ibge": 3156403,
+    "slug": "romaria"
+  },
+  {
+    "ibge": 3156908,
+    "slug": "sacramento"
+  },
+  {
+    "ibge": 3157708,
+    "slug": "santa_juliana"
+  },
+  {
+    "ibge": 3161304,
+    "slug": "sao_francisco_de_sales"
+  },
+  {
+    "ibge": 3166808,
+    "slug": "serra_do_salitre"
+  },
+  {
+    "ibge": 3168101,
+    "slug": "tapira"
+  },
+  {
+    "ibge": 3169604,
+    "slug": "tupaciguara"
+  },
+  {
+    "ibge": 3170107,
+    "slug": "uberaba"
+  },
+  {
+    "ibge": 3170206,
+    "slug": "uberlandia"
+  },
+  {
+    "ibge": 3171105,
+    "slug": "verissimo"
+  }
+]

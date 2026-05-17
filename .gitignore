@@ -22,3 +22,22 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python (pipelines)
+.venv/
+__pycache__/
+*.pyc
+
+# Pipeline intermediate caches
+data/cnes/.pysus_cache/
+
+# CNES parquets e cache de nomes (reproduzíveis pelos pipelines 01 e 02; pesados)
+data/cnes/*.parquet
+data/cnes/nomes/
+
+# Saída interna do pipeline 03 (cópia em public/data/enriquecido/ é a publicada)
+data/enriquecido/
+data/delta/
+
+# Lighthouse benchmark cache and outputs
+.lighthouse/

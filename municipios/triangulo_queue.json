@@ -1,0 +1,404 @@
+{
+  "meso_id": 3105,
+  "nome_meso": "Triângulo Mineiro e Alto Paranaíba",
+  "origem": "Uberlândia (IBGE 3170206)",
+  "total": 66,
+  "queue": [
+    {
+      "ibge": 3170206,
+      "nome": "Uberlândia",
+      "slug": "uberlandia",
+      "dist_km": 0.0
+    },
+    {
+      "ibge": 3103504,
+      "nome": "Araguari",
+      "slug": "araguari",
+      "dist_km": 45.5
+    },
+    {
+      "ibge": 3130705,
+      "nome": "Indianópolis",
+      "slug": "indianopolis",
+      "dist_km": 52.7
+    },
+    {
+      "ibge": 3142809,
+      "nome": "Monte Alegre de Minas",
+      "slug": "monte_alegre_de_minas",
+      "dist_km": 59.6
+    },
+    {
+      "ibge": 3169604,
+      "nome": "Tupaciguara",
+      "slug": "tupaciguara",
+      "dist_km": 64.6
+    },
+    {
+      "ibge": 3152808,
+      "nome": "Prata",
+      "slug": "prata",
+      "dist_km": 65.1
+    },
+    {
+      "ibge": 3171105,
+      "nome": "Veríssimo",
+      "slug": "verissimo",
+      "dist_km": 68.3
+    },
+    {
+      "ibge": 3115003,
+      "nome": "Cascalho Rico",
+      "slug": "cascalho_rico",
+      "dist_km": 71.2
+    },
+    {
+      "ibge": 3124807,
+      "nome": "Estrela do Sul",
+      "slug": "estrela_do_sul",
+      "dist_km": 72.1
+    },
+    {
+      "ibge": 3145000,
+      "nome": "Nova Ponte",
+      "slug": "nova_ponte",
+      "dist_km": 73.6
+    },
+    {
+      "ibge": 3170107,
+      "nome": "Uberaba",
+      "slug": "uberaba",
+      "dist_km": 79.1
+    },
+    {
+      "ibge": 3111408,
+      "nome": "Campo Florido",
+      "slug": "campo_florido",
+      "dist_km": 84.5
+    },
+    {
+      "ibge": 3127909,
+      "nome": "Grupiara",
+      "slug": "grupiara",
+      "dist_km": 84.8
+    },
+    {
+      "ibge": 3156403,
+      "nome": "Romaria",
+      "slug": "romaria",
+      "dist_km": 86.2
+    },
+    {
+      "ibge": 3149200,
+      "nome": "Pedrinópolis",
+      "slug": "pedrinopolis",
+      "dist_km": 91.4
+    },
+    {
+      "ibge": 3115805,
+      "nome": "Centralina",
+      "slug": "centralina",
+      "dist_km": 92.9
+    },
+    {
+      "ibge": 3131604,
+      "nome": "Iraí de Minas",
+      "slug": "irai_de_minas",
+      "dist_km": 94.3
+    },
+    {
+      "ibge": 3111804,
+      "nome": "Canápolis",
+      "slug": "canapolis",
+      "dist_km": 96.4
+    },
+    {
+      "ibge": 3143104,
+      "nome": "Monte Carmelo",
+      "slug": "monte_carmelo",
+      "dist_km": 96.7
+    },
+    {
+      "ibge": 3157708,
+      "nome": "Santa Juliana",
+      "slug": "santa_juliana",
+      "dist_km": 98.9
+    },
+    {
+      "ibge": 3103751,
+      "nome": "Araporã",
+      "slug": "arapora",
+      "dist_km": 99.6
+    },
+    {
+      "ibge": 3123502,
+      "nome": "Douradoquara",
+      "slug": "douradoquara",
+      "dist_km": 101.2
+    },
+    {
+      "ibge": 3117306,
+      "nome": "Conceição das Alagoas",
+      "slug": "conceicao_das_alagoas",
+      "dist_km": 104.4
+    },
+    {
+      "ibge": 3116902,
+      "nome": "Comendador Gomes",
+      "slug": "comendador_gomes",
+      "dist_km": 107.2
+    },
+    {
+      "ibge": 3150703,
+      "nome": "Pirajuba",
+      "slug": "pirajuba",
+      "dist_km": 109.1
+    },
+    {
+      "ibge": 3100708,
+      "nome": "Água Comprida",
+      "slug": "agua_comprida",
+      "dist_km": 114.0
+    },
+    {
+      "ibge": 3100104,
+      "nome": "Abadia dos Dourados",
+      "slug": "abadia_dos_dourados",
+      "dist_km": 115.7
+    },
+    {
+      "ibge": 3121258,
+      "nome": "Delta",
+      "slug": "delta",
+      "dist_km": 118.3
+    },
+    {
+      "ibge": 3151602,
+      "nome": "Planura",
+      "slug": "planura",
+      "dist_km": 122.0
+    },
+    {
+      "ibge": 3118205,
+      "nome": "Conquista",
+      "slug": "conquista",
+      "dist_km": 122.6
+    },
+    {
+      "ibge": 3134202,
+      "nome": "Ituiutaba",
+      "slug": "ituiutaba",
+      "dist_km": 123.1
+    },
+    {
+      "ibge": 3109808,
+      "nome": "Cachoeira Dourada",
+      "slug": "cachoeira_dourada",
+      "dist_km": 124.1
+    },
+    {
+      "ibge": 3112604,
+      "nome": "Capinópolis",
+      "slug": "capinopolis",
+      "dist_km": 131.6
+    },
+    {
+      "ibge": 3149804,
+      "nome": "Perdizes",
+      "slug": "perdizes",
+      "dist_km": 135.8
+    },
+    {
+      "ibge": 3148103,
+      "nome": "Patrocínio",
+      "slug": "patrocinio",
+      "dist_km": 136.0
+    },
+    {
+      "ibge": 3127107,
+      "nome": "Frutal",
+      "slug": "frutal",
+      "dist_km": 140.7
+    },
+    {
+      "ibge": 3133402,
+      "nome": "Itapagipe",
+      "slug": "itapagipe",
+      "dist_km": 141.2
+    },
+    {
+      "ibge": 3119302,
+      "nome": "Coromandel",
+      "slug": "coromandel",
+      "dist_km": 149.7
+    },
+    {
+      "ibge": 3156908,
+      "nome": "Sacramento",
+      "slug": "sacramento",
+      "dist_km": 152.0
+    },
+    {
+      "ibge": 3111101,
+      "nome": "Campina Verde",
+      "slug": "campina_verde",
+      "dist_km": 157.0
+    },
+    {
+      "ibge": 3129103,
+      "nome": "Gurinhatã",
+      "slug": "gurinhata",
+      "dist_km": 157.9
+    },
+    {
+      "ibge": 3127008,
+      "nome": "Fronteira",
+      "slug": "fronteira",
+      "dist_km": 159.2
+    },
+    {
+      "ibge": 3104007,
+      "nome": "Araxá",
+      "slug": "araxa",
+      "dist_km": 160.5
+    },
+    {
+      "ibge": 3131406,
+      "nome": "Ipiaçu",
+      "slug": "ipiacu",
+      "dist_km": 168.9
+    },
+    {
+      "ibge": 3128907,
+      "nome": "Guimarânia",
+      "slug": "guimarania",
+      "dist_km": 171.9
+    },
+    {
+      "ibge": 3166808,
+      "nome": "Serra do Salitre",
+      "slug": "serra_do_salitre",
+      "dist_km": 177.0
+    },
+    {
+      "ibge": 3120706,
+      "nome": "Cruzeiro da Fortaleza",
+      "slug": "cruzeiro_da_fortaleza",
+      "dist_km": 178.0
+    },
+    {
+      "ibge": 3161304,
+      "nome": "São Francisco de Sales",
+      "slug": "sao_francisco_de_sales",
+      "dist_km": 179.6
+    },
+    {
+      "ibge": 3168101,
+      "nome": "Tapira",
+      "slug": "tapira",
+      "dist_km": 185.1
+    },
+    {
+      "ibge": 3129509,
+      "nome": "Ibiá",
+      "slug": "ibia",
+      "dist_km": 198.4
+    },
+    {
+      "ibge": 3148004,
+      "nome": "Patos de Minas",
+      "slug": "patos_de_minas",
+      "dist_km": 209.3
+    },
+    {
+      "ibge": 3159803,
+      "nome": "Santa Vitória",
+      "slug": "santa_vitoria",
+      "dist_km": 209.3
+    },
+    {
+      "ibge": 3170438,
+      "nome": "União de Minas",
+      "slug": "uniao_de_minas",
+      "dist_km": 212.8
+    },
+    {
+      "ibge": 3155504,
+      "nome": "Rio Paranaíba",
+      "slug": "rio_paranaiba",
+      "dist_km": 217.3
+    },
+    {
+      "ibge": 3137502,
+      "nome": "Lagoa Formosa",
+      "slug": "lagoa_formosa",
+      "dist_km": 218.6
+    },
+    {
+      "ibge": 3153004,
+      "nome": "Pratinha",
+      "slug": "pratinha",
+      "dist_km": 222.7
+    },
+    {
+      "ibge": 3134400,
+      "nome": "Iturama",
+      "slug": "iturama",
+      "dist_km": 226.6
+    },
+    {
+      "ibge": 3114303,
+      "nome": "Carmo do Paranaíba",
+      "slug": "carmo_do_paranaiba",
+      "dist_km": 229.5
+    },
+    {
+      "ibge": 3103801,
+      "nome": "Arapuá",
+      "slug": "arapua",
+      "dist_km": 235.0
+    },
+    {
+      "ibge": 3111507,
+      "nome": "Campos Altos",
+      "slug": "campos_altos",
+      "dist_km": 236.9
+    },
+    {
+      "ibge": 3138625,
+      "nome": "Limeira do Oeste",
+      "slug": "limeira_do_oeste",
+      "dist_km": 246.0
+    },
+    {
+      "ibge": 3141207,
+      "nome": "Matutina",
+      "slug": "matutina",
+      "dist_km": 252.1
+    },
+    {
+      "ibge": 3162104,
+      "nome": "São Gotardo",
+      "slug": "sao_gotardo",
+      "dist_km": 253.6
+    },
+    {
+      "ibge": 3159704,
+      "nome": "Santa Rosa da Serra",
+      "slug": "santa_rosa_da_serra",
+      "dist_km": 254.6
+    },
+    {
+      "ibge": 3168903,
+      "nome": "Tiros",
+      "slug": "tiros",
+      "dist_km": 266.6
+    },
+    {
+      "ibge": 3114550,
+      "nome": "Carneirinho",
+      "slug": "carneirinho",
+      "dist_km": 270.0
+    }
+  ]
+}

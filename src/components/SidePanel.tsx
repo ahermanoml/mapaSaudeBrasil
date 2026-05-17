@@ -1,9 +1,14 @@
 import { motion, AnimatePresence } from 'motion/react'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { View, RegionId, Municipio } from '../types'
 import { REGIONS, REGION_ORDER } from '../data/regions'
 import { STATES_BY_SIGLA, STATES_GEO } from '../data/states'
 import { MUNICIPIOS_BY_UF, MUNICIPIOS_BY_ID } from '../data/municipios'
+import {
+  fetchEstabelecimentos,
+  type Estabelecimento,
+  type EstabelecimentosPayload,
+} from '../data/cnes'
 
 interface SidePanelProps {
   view: View
@@ -358,27 +363,326 @@ function CityList({
 
 function CidadePanel({ municipioId }: { municipioId: number }) {
   const m = MUNICIPIOS_BY_ID[municipioId]
+
+  // Tag the loaded result with the id it belongs to so the render derives
+  // "fresh for current município" without ever resetting state in an effect.
+  const [loaded, setLoaded] = useState<{
+    id: number
+    payload: EstabelecimentosPayload | null
+  } | null>(null)
+
+  useEffect(() => {
+    if (!m) return
+    let cancelled = false
+    fetchEstabelecimentos(m.id).then((p) => {
+      if (cancelled) return
+      setLoaded({ id: m.id, payload: p })
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [m])
+
+  const isCurrent = !!(loaded && m && loaded.id === m.id)
+  const loading = !isCurrent
+  const payload = isCurrent && loaded ? loaded.payload : null
+  const hasCnes = !loading && payload !== null
+
   if (!m) return null
   const r = REGIONS[m.regiao]
 
   return (
-    <div>
-      <div className="num text-[10px] tracking-[0.3em] uppercase text-terra">
-        município · IBGE {m.id}
+    <div className="flex flex-col gap-6">
+      <div>
+        <div className="num text-[10px] tracking-[0.3em] uppercase text-terra">
+          município · IBGE {m.id}
+        </div>
+        <h3
+          className="font-display italic text-6xl leading-[0.9] mt-1 text-ink"
+          style={{ fontVariationSettings: '"opsz" 144, "SOFT" 80' }}
+        >
+          {m.nome}
+        </h3>
+        <div className="num text-[11px] mt-3 text-ink-50 flex gap-4 flex-wrap">
+          <span style={{ color: r.cor }}>
+            {m.uf} · {r.nome}
+          </span>
+        </div>
       </div>
-      <h3
-        className="font-display italic text-6xl leading-[0.9] mt-1 text-ink"
-        style={{ fontVariationSettings: '"opsz" 144, "SOFT" 80' }}
-      >
-        {m.nome}
-      </h3>
-      <div className="num text-[11px] mt-3 text-ink-50 flex gap-4 flex-wrap">
-        <span style={{ color: r.cor }}>
-          {m.uf} · {r.nome}
-        </span>
+
+      <EstabelecimentosSection
+        hasCnes={hasCnes}
+        loading={loading}
+        payload={payload}
+      />
+    </div>
+  )
+}
+
+function EstabelecimentosSection({
+  hasCnes,
+  loading,
+  payload,
+}: {
+  hasCnes: boolean
+  loading: boolean
+  payload: EstabelecimentosPayload | null
+}) {
+  if (loading) {
+    return (
+      <div>
+        <SectionLabel n="03" titulo="Estabelecimentos · CNES" />
+        <p className="mt-3 num text-[10px] tracking-[0.22em] uppercase text-ink-50">
+          carregando…
+        </p>
+      </div>
+    )
+  }
+  if (!hasCnes || !payload) {
+    return (
+      <div>
+        <SectionLabel n="03" titulo="Estabelecimentos · CNES" />
+        <p className="mt-3 text-ink-50 text-sm leading-relaxed italic font-display">
+          Sem dados CNES carregados para este município ainda.
+        </p>
+      </div>
+    )
+  }
+
+  const porGrupo = agregarPorGrupo(payload.por_tipo)
+
+  return (
+    <>
+      <div>
+        <SectionLabel n="03" titulo="Estabelecimentos · CNES" />
+        <div className="mt-3 flex items-baseline gap-3 flex-wrap">
+          <span
+            className="font-display italic text-5xl leading-none text-ink"
+            style={{ fontVariationSettings: '"opsz" 64, "SOFT" 60' }}
+          >
+            {payload.total_relevante_generalista.toLocaleString('pt-BR')}
+          </span>
+          <span className="text-ink-70 text-sm leading-snug max-w-[200px]">
+            unidades onde generalista tipicamente trabalha
+          </span>
+        </div>
+        <div className="num text-[10px] mt-2 text-ink-50 tracking-[0.15em]">
+          de {payload.total_no_municipio.toLocaleString('pt-BR')} estabelecimentos
+          totais · fonte {payload.fonte}
+        </div>
+      </div>
+
+      <div>
+        <div className="num text-[10px] tracking-[0.22em] uppercase text-ink-50 mb-2">
+          por grupo
+        </div>
+        <ul className="divide-y divide-ink-15/70 hairline rounded-sm bg-paper-warm/60">
+          {porGrupo.map(([grupo, n, tipos]) => (
+            <li
+              key={grupo}
+              className="flex items-baseline justify-between gap-3 px-3 py-2"
+            >
+              <span className="flex-1 min-w-0">
+                <span
+                  className="font-display text-base leading-tight block"
+                  style={{ fontVariationSettings: '"opsz" 18' }}
+                >
+                  {grupo}
+                </span>
+                <span className="num text-[10px] text-ink-50 tracking-[0.1em] block truncate">
+                  {tipos.join(' · ')}
+                </span>
+              </span>
+              <span className="num text-xs tabular-nums text-ink-70">
+                {n.toLocaleString('pt-BR')}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <EstabelecimentosList estabelecimentos={payload.estabelecimentos} />
+    </>
+  )
+}
+
+function EstabelecimentosList({
+  estabelecimentos,
+}: {
+  estabelecimentos: Estabelecimento[]
+}) {
+  const [query, setQuery] = useState('')
+  const [grupoFiltro, setGrupoFiltro] = useState<string | null>(null)
+
+  const gruposPresentes = useMemo(() => {
+    const set = new Set<string>()
+    for (const e of estabelecimentos) set.add(tipoToGrupo(e.tp_unid))
+    return GRUPO_ORDER.filter((g) => set.has(g))
+  }, [estabelecimentos])
+
+  const rows = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    return estabelecimentos.filter((e) => {
+      if (grupoFiltro && tipoToGrupo(e.tp_unid) !== grupoFiltro) return false
+      if (!q) return true
+      const nome = (e.nome ?? '').toLowerCase()
+      return (
+        nome.includes(q) ||
+        e.cnes.toLowerCase().includes(q) ||
+        (e.cep ?? '').toLowerCase().includes(q) ||
+        e.tp_unid.toLowerCase().includes(q)
+      )
+    })
+  }, [estabelecimentos, query, grupoFiltro])
+
+  return (
+    <div>
+      <div className="num text-[10px] tracking-[0.22em] uppercase text-ink-50 mb-2">
+        lista · {rows.length.toLocaleString('pt-BR')} registros
+      </div>
+      <div className="flex flex-col gap-2 mb-2">
+        <input
+          type="text"
+          placeholder="filtrar por nome, CNES, CEP ou tipo…"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          className="w-full bg-transparent border-b border-ink-30 focus:border-ink outline-none py-1 font-display italic text-base placeholder:text-ink-30"
+          style={{ fontVariationSettings: '"opsz" 18' }}
+        />
+        <div className="flex gap-1 flex-wrap">
+          <button
+            type="button"
+            onClick={() => setGrupoFiltro(null)}
+            className={
+              'num text-[10px] tracking-[0.18em] uppercase px-2 py-1 border transition-colors ' +
+              (grupoFiltro === null
+                ? 'border-ink bg-ink text-paper'
+                : 'border-ink-15 hover:border-ink-50')
+            }
+          >
+            tudo
+          </button>
+          {gruposPresentes.map((g) => (
+            <button
+              key={g}
+              type="button"
+              onClick={() => setGrupoFiltro(g === grupoFiltro ? null : g)}
+              className={
+                'num text-[10px] tracking-[0.18em] uppercase px-2 py-1 border transition-colors ' +
+                (grupoFiltro === g
+                  ? 'border-ink bg-ink text-paper'
+                  : 'border-ink-15 hover:border-ink-50')
+              }
+            >
+              {g}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="overflow-auto -mx-1 px-1" style={{ maxHeight: '40vh' }}>
+        <ul className="divide-y divide-ink-15/50">
+          {rows.slice(0, 240).map((e) => (
+            <li
+              key={e.cnes}
+              className="px-2 py-2 flex items-baseline gap-3"
+              title={`${e.tp_unid} · CNPJ ${e.cnpj ?? '—'}`}
+            >
+              <span className="num text-[10px] text-ink-50 tabular-nums w-16 shrink-0">
+                {e.cnes}
+              </span>
+              <span className="flex-1 min-w-0">
+                <span
+                  className="font-display text-sm leading-tight text-ink block truncate"
+                  style={{ fontVariationSettings: '"opsz" 18' }}
+                >
+                  {e.nome ?? e.tp_unid}
+                </span>
+                {e.nome && (
+                  <span className="num text-[9px] text-ink-50 tracking-[0.08em] block truncate">
+                    {e.tp_unid}
+                  </span>
+                )}
+              </span>
+              <span className="num text-[10px] text-ink-30 tabular-nums shrink-0">
+                {e.cep ?? '—'}
+              </span>
+              {e.atende_sus === 'S' || e.atende_sus === '1' ? (
+                <span
+                  className="num text-[9px] tracking-[0.18em] uppercase"
+                  style={{ color: 'var(--verde-600, #4a6b3a)' }}
+                  title="atende SUS"
+                >
+                  sus
+                </span>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+        {rows.length > 240 && (
+          <div className="num text-[10px] text-ink-50 mt-2 text-right">
+            + {(rows.length - 240).toLocaleString('pt-BR')} — refine a busca
+          </div>
+        )}
       </div>
     </div>
   )
+}
+
+const GRUPO_ORDER = [
+  'Atenção primária',
+  'Hospital',
+  'Urgência',
+  'Especialidade',
+  'Consultório',
+  'Outros',
+] as const
+
+type Grupo = (typeof GRUPO_ORDER)[number]
+
+const TIPO_TO_GRUPO: Record<string, Grupo> = {
+  'Centro de Saúde / UBS': 'Atenção primária',
+  'Posto de Saúde': 'Atenção primária',
+  'Centro de Apoio à Saúde da Família': 'Atenção primária',
+  'Hospital Geral': 'Hospital',
+  'Hospital Especializado': 'Hospital',
+  'Unidade Mista': 'Hospital',
+  'Hospital/Dia - Isolado': 'Hospital',
+  'Pronto Socorro Geral': 'Urgência',
+  'Pronto Socorro Especializado': 'Urgência',
+  'Pronto Atendimento': 'Urgência',
+  'Unidade Móvel Pré-Hospitalar - Urgência': 'Urgência',
+  'Clínica/Centro de Especialidade': 'Especialidade',
+  'Policlínica': 'Especialidade',
+  'Consultório Isolado': 'Consultório',
+}
+
+function tipoToGrupo(tp: string): Grupo {
+  return TIPO_TO_GRUPO[tp] ?? 'Outros'
+}
+
+function agregarPorGrupo(
+  porTipo: Record<string, number>
+): Array<[Grupo, number, string[]]> {
+  const agg: Record<Grupo, { n: number; tipos: Array<[string, number]> }> = {
+    'Atenção primária': { n: 0, tipos: [] },
+    Hospital: { n: 0, tipos: [] },
+    Urgência: { n: 0, tipos: [] },
+    Especialidade: { n: 0, tipos: [] },
+    Consultório: { n: 0, tipos: [] },
+    Outros: { n: 0, tipos: [] },
+  }
+  for (const [tipo, n] of Object.entries(porTipo)) {
+    const g = tipoToGrupo(tipo)
+    agg[g].n += n
+    agg[g].tipos.push([tipo, n])
+  }
+  return GRUPO_ORDER.filter((g) => agg[g].n > 0).map((g) => [
+    g,
+    agg[g].n,
+    agg[g].tipos
+      .sort((a, b) => b[1] - a[1])
+      .map(([t, n]) => `${t} ${n}`),
+  ])
 }
 
 function SectionLabel({ n, titulo }: { n: string; titulo: string }) {
