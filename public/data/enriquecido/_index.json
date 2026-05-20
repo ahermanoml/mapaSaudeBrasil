@@ -16,6 +16,10 @@
     "slug": "arapora"
   },
   {
+    "ibge": 3103801,
+    "slug": "arapua"
+  },
+  {
     "ibge": 3104007,
     "slug": "araxa"
   },
@@ -32,12 +36,24 @@
     "slug": "campo_florido"
   },
   {
+    "ibge": 3111507,
+    "slug": "campos_altos"
+  },
+  {
     "ibge": 3111804,
     "slug": "canapolis"
   },
   {
     "ibge": 3112604,
     "slug": "capinopolis"
+  },
+  {
+    "ibge": 3114303,
+    "slug": "carmo_do_paranaiba"
+  },
+  {
+    "ibge": 3114550,
+    "slug": "carneirinho"
   },
   {
     "ibge": 3115003,
@@ -124,6 +140,22 @@
     "slug": "ituiutaba"
   },
   {
+    "ibge": 3134400,
+    "slug": "iturama"
+  },
+  {
+    "ibge": 3137502,
+    "slug": "lagoa_formosa"
+  },
+  {
+    "ibge": 3138625,
+    "slug": "limeira_do_oeste"
+  },
+  {
+    "ibge": 3141207,
+    "slug": "matutina"
+  },
+  {
     "ibge": 3142809,
     "slug": "monte_alegre_de_minas"
   },
@@ -164,6 +196,14 @@
     "slug": "prata"
   },
   {
+    "ibge": 3153004,
+    "slug": "pratinha"
+  },
+  {
+    "ibge": 3155504,
+    "slug": "rio_paranaiba"
+  },
+  {
     "ibge": 3156403,
     "slug": "romaria"
   },
@@ -176,8 +216,20 @@
     "slug": "santa_juliana"
   },
   {
+    "ibge": 3159704,
+    "slug": "santa_rosa_da_serra"
+  },
+  {
+    "ibge": 3159803,
+    "slug": "santa_vitoria"
+  },
+  {
     "ibge": 3161304,
     "slug": "sao_francisco_de_sales"
+  },
+  {
+    "ibge": 3162104,
+    "slug": "sao_gotardo"
   },
   {
     "ibge": 3166808,
@@ -186,6 +238,10 @@
   {
     "ibge": 3168101,
     "slug": "tapira"
+  },
+  {
+    "ibge": 3168903,
+    "slug": "tiros"
   },
   {
     "ibge": 3169604,
@@ -198,6 +254,10 @@
   {
     "ibge": 3170206,
     "slug": "uberlandia"
+  },
+  {
+    "ibge": 3170438,
+    "slug": "uniao_de_minas"
   },
   {
     "ibge": 3171105,
