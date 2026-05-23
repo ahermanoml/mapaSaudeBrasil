@@ -4,12 +4,160 @@
     "slug": "abadia_dos_dourados"
   },
   {
+    "ibge": 3100203,
+    "slug": "abaete"
+  },
+  {
+    "ibge": 3100302,
+    "slug": "abre_campo"
+  },
+  {
+    "ibge": 3100401,
+    "slug": "acaiaca"
+  },
+  {
+    "ibge": 3100500,
+    "slug": "acucena"
+  },
+  {
+    "ibge": 3100609,
+    "slug": "agua_boa"
+  },
+  {
     "ibge": 3100708,
     "slug": "agua_comprida"
   },
   {
+    "ibge": 3100807,
+    "slug": "aguanil"
+  },
+  {
+    "ibge": 3100906,
+    "slug": "aguas_formosas"
+  },
+  {
+    "ibge": 3101003,
+    "slug": "aguas_vermelhas"
+  },
+  {
+    "ibge": 3101102,
+    "slug": "aimores"
+  },
+  {
+    "ibge": 3101201,
+    "slug": "aiuruoca"
+  },
+  {
+    "ibge": 3101300,
+    "slug": "alagoa"
+  },
+  {
+    "ibge": 3101409,
+    "slug": "albertina"
+  },
+  {
+    "ibge": 3101508,
+    "slug": "alem_paraiba"
+  },
+  {
+    "ibge": 3101607,
+    "slug": "alfenas"
+  },
+  {
+    "ibge": 3101631,
+    "slug": "alfredo_vasconcelos"
+  },
+  {
+    "ibge": 3101706,
+    "slug": "almenara"
+  },
+  {
+    "ibge": 3101805,
+    "slug": "alpercata"
+  },
+  {
+    "ibge": 3101904,
+    "slug": "alpinopolis"
+  },
+  {
+    "ibge": 3102001,
+    "slug": "alterosa"
+  },
+  {
+    "ibge": 3102050,
+    "slug": "alto_caparao"
+  },
+  {
+    "ibge": 3102100,
+    "slug": "alto_rio_doce"
+  },
+  {
+    "ibge": 3102209,
+    "slug": "alvarenga"
+  },
+  {
+    "ibge": 3102308,
+    "slug": "alvinopolis"
+  },
+  {
+    "ibge": 3102407,
+    "slug": "alvorada_de_minas"
+  },
+  {
+    "ibge": 3102506,
+    "slug": "amparo_do_serra"
+  },
+  {
+    "ibge": 3102605,
+    "slug": "andradas"
+  },
+  {
+    "ibge": 3102704,
+    "slug": "cachoeira_de_pajeu"
+  },
+  {
+    "ibge": 3102803,
+    "slug": "andrelandia"
+  },
+  {
+    "ibge": 3102852,
+    "slug": "angelandia"
+  },
+  {
+    "ibge": 3102902,
+    "slug": "antonio_carlos"
+  },
+  {
+    "ibge": 3103009,
+    "slug": "antonio_dias"
+  },
+  {
+    "ibge": 3103108,
+    "slug": "antonio_prado_de_minas"
+  },
+  {
+    "ibge": 3103207,
+    "slug": "aracai"
+  },
+  {
+    "ibge": 3103306,
+    "slug": "aracitaba"
+  },
+  {
+    "ibge": 3103405,
+    "slug": "aracuai"
+  },
+  {
     "ibge": 3103504,
     "slug": "araguari"
+  },
+  {
+    "ibge": 3103603,
+    "slug": "arantina"
+  },
+  {
+    "ibge": 3103702,
+    "slug": "araponga"
   },
   {
     "ibge": 3103751,
@@ -20,16 +168,328 @@
     "slug": "arapua"
   },
   {
+    "ibge": 3103900,
+    "slug": "araujos"
+  },
+  {
     "ibge": 3104007,
     "slug": "araxa"
+  },
+  {
+    "ibge": 3104106,
+    "slug": "arceburgo"
+  },
+  {
+    "ibge": 3104205,
+    "slug": "arcos"
+  },
+  {
+    "ibge": 3104304,
+    "slug": "areado"
+  },
+  {
+    "ibge": 3104403,
+    "slug": "argirita"
+  },
+  {
+    "ibge": 3104452,
+    "slug": "aricanduva"
+  },
+  {
+    "ibge": 3104502,
+    "slug": "arinos"
+  },
+  {
+    "ibge": 3104601,
+    "slug": "astolfo_dutra"
+  },
+  {
+    "ibge": 3104700,
+    "slug": "ataleia"
+  },
+  {
+    "ibge": 3104809,
+    "slug": "augusto_de_lima"
+  },
+  {
+    "ibge": 3104908,
+    "slug": "baependi"
+  },
+  {
+    "ibge": 3105004,
+    "slug": "baldim"
+  },
+  {
+    "ibge": 3105103,
+    "slug": "bambui"
+  },
+  {
+    "ibge": 3105202,
+    "slug": "bandeira"
+  },
+  {
+    "ibge": 3105301,
+    "slug": "bandeira_do_sul"
+  },
+  {
+    "ibge": 3105400,
+    "slug": "barao_de_cocais"
+  },
+  {
+    "ibge": 3105509,
+    "slug": "barao_do_monte_alto"
+  },
+  {
+    "ibge": 3105608,
+    "slug": "barbacena"
+  },
+  {
+    "ibge": 3105707,
+    "slug": "barra_longa"
+  },
+  {
+    "ibge": 3105905,
+    "slug": "barroso"
+  },
+  {
+    "ibge": 3106002,
+    "slug": "bela_vista_de_minas"
+  },
+  {
+    "ibge": 3106101,
+    "slug": "belmiro_braga"
+  },
+  {
+    "ibge": 3106200,
+    "slug": "belo_horizonte"
+  },
+  {
+    "ibge": 3106309,
+    "slug": "belo_oriente"
+  },
+  {
+    "ibge": 3106408,
+    "slug": "belo_vale"
+  },
+  {
+    "ibge": 3106507,
+    "slug": "berilo"
+  },
+  {
+    "ibge": 3106606,
+    "slug": "bertopolis"
+  },
+  {
+    "ibge": 3106655,
+    "slug": "berizal"
+  },
+  {
+    "ibge": 3106705,
+    "slug": "betim"
+  },
+  {
+    "ibge": 3106804,
+    "slug": "bias_fortes"
+  },
+  {
+    "ibge": 3106903,
+    "slug": "bicas"
+  },
+  {
+    "ibge": 3107000,
+    "slug": "biquinhas"
+  },
+  {
+    "ibge": 3107109,
+    "slug": "boa_esperanca"
+  },
+  {
+    "ibge": 3107208,
+    "slug": "bocaina_de_minas"
+  },
+  {
+    "ibge": 3107307,
+    "slug": "bocaiuva"
+  },
+  {
+    "ibge": 3107406,
+    "slug": "bom_despacho"
+  },
+  {
+    "ibge": 3107505,
+    "slug": "bom_jardim_de_minas"
+  },
+  {
+    "ibge": 3107604,
+    "slug": "bom_jesus_da_penha"
+  },
+  {
+    "ibge": 3107703,
+    "slug": "bom_jesus_do_amparo"
+  },
+  {
+    "ibge": 3107802,
+    "slug": "bom_jesus_do_galho"
+  },
+  {
+    "ibge": 3107901,
+    "slug": "bom_repouso"
+  },
+  {
+    "ibge": 3108008,
+    "slug": "bom_sucesso"
+  },
+  {
+    "ibge": 3108107,
+    "slug": "bonfim"
+  },
+  {
+    "ibge": 3108206,
+    "slug": "bonfinopolis_de_minas"
+  },
+  {
+    "ibge": 3108255,
+    "slug": "bonito_de_minas"
+  },
+  {
+    "ibge": 3108305,
+    "slug": "borda_da_mata"
+  },
+  {
+    "ibge": 3108404,
+    "slug": "botelhos"
+  },
+  {
+    "ibge": 3108503,
+    "slug": "botumirim"
+  },
+  {
+    "ibge": 3108552,
+    "slug": "brasilandia_de_minas"
+  },
+  {
+    "ibge": 3108602,
+    "slug": "brasilia_de_minas"
+  },
+  {
+    "ibge": 3108701,
+    "slug": "bras_pires"
+  },
+  {
+    "ibge": 3108800,
+    "slug": "braunas"
+  },
+  {
+    "ibge": 3108909,
+    "slug": "brazopolis"
+  },
+  {
+    "ibge": 3109006,
+    "slug": "brumadinho"
+  },
+  {
+    "ibge": 3109105,
+    "slug": "bueno_brandao"
+  },
+  {
+    "ibge": 3109204,
+    "slug": "buenopolis"
+  },
+  {
+    "ibge": 3109253,
+    "slug": "bugre"
+  },
+  {
+    "ibge": 3109303,
+    "slug": "buritis"
+  },
+  {
+    "ibge": 3109402,
+    "slug": "buritizeiro"
+  },
+  {
+    "ibge": 3109451,
+    "slug": "cabeceira_grande"
+  },
+  {
+    "ibge": 3109501,
+    "slug": "cabo_verde"
+  },
+  {
+    "ibge": 3109600,
+    "slug": "cachoeira_da_prata"
+  },
+  {
+    "ibge": 3109709,
+    "slug": "cachoeira_de_minas"
   },
   {
     "ibge": 3109808,
     "slug": "cachoeira_dourada"
   },
   {
+    "ibge": 3109907,
+    "slug": "caetanopolis"
+  },
+  {
+    "ibge": 3110004,
+    "slug": "caete"
+  },
+  {
+    "ibge": 3110103,
+    "slug": "caiana"
+  },
+  {
+    "ibge": 3110202,
+    "slug": "cajuri"
+  },
+  {
+    "ibge": 3110301,
+    "slug": "caldas"
+  },
+  {
+    "ibge": 3110400,
+    "slug": "camacho"
+  },
+  {
+    "ibge": 3110509,
+    "slug": "camanducaia"
+  },
+  {
+    "ibge": 3110608,
+    "slug": "cambui"
+  },
+  {
+    "ibge": 3110707,
+    "slug": "cambuquira"
+  },
+  {
+    "ibge": 3110806,
+    "slug": "campanario"
+  },
+  {
+    "ibge": 3110905,
+    "slug": "campanha"
+  },
+  {
+    "ibge": 3111002,
+    "slug": "campestre"
+  },
+  {
     "ibge": 3111101,
     "slug": "campina_verde"
+  },
+  {
+    "ibge": 3111150,
+    "slug": "campo_azul"
+  },
+  {
+    "ibge": 3111200,
+    "slug": "campo_belo"
+  },
+  {
+    "ibge": 3111309,
+    "slug": "campo_do_meio"
   },
   {
     "ibge": 3111408,
@@ -40,132 +500,1744 @@
     "slug": "campos_altos"
   },
   {
+    "ibge": 3111606,
+    "slug": "campos_gerais"
+  },
+  {
+    "ibge": 3111705,
+    "slug": "canaa"
+  },
+  {
     "ibge": 3111804,
     "slug": "canapolis"
+  },
+  {
+    "ibge": 3111903,
+    "slug": "cana_verde"
+  },
+  {
+    "ibge": 3112000,
+    "slug": "candeias"
+  },
+  {
+    "ibge": 3112059,
+    "slug": "cantagalo"
+  },
+  {
+    "ibge": 3112109,
+    "slug": "caparao"
+  },
+  {
+    "ibge": 3112208,
+    "slug": "capela_nova"
+  },
+  {
+    "ibge": 3112307,
+    "slug": "capelinha"
+  },
+  {
+    "ibge": 3112406,
+    "slug": "capetinga"
+  },
+  {
+    "ibge": 3112505,
+    "slug": "capim_branco"
   },
   {
     "ibge": 3112604,
     "slug": "capinopolis"
   },
   {
+    "ibge": 3112653,
+    "slug": "capitao_andrade"
+  },
+  {
+    "ibge": 3112703,
+    "slug": "capitao_eneas"
+  },
+  {
+    "ibge": 3112802,
+    "slug": "capitolio"
+  },
+  {
+    "ibge": 3112901,
+    "slug": "caputira"
+  },
+  {
+    "ibge": 3113008,
+    "slug": "carai"
+  },
+  {
+    "ibge": 3113107,
+    "slug": "caranaiba"
+  },
+  {
+    "ibge": 3113206,
+    "slug": "carandai"
+  },
+  {
+    "ibge": 3113305,
+    "slug": "carangola"
+  },
+  {
+    "ibge": 3113404,
+    "slug": "caratinga"
+  },
+  {
+    "ibge": 3113503,
+    "slug": "carbonita"
+  },
+  {
+    "ibge": 3113602,
+    "slug": "careacu"
+  },
+  {
+    "ibge": 3113701,
+    "slug": "carlos_chagas"
+  },
+  {
+    "ibge": 3113800,
+    "slug": "carmesia"
+  },
+  {
+    "ibge": 3113909,
+    "slug": "carmo_da_cachoeira"
+  },
+  {
+    "ibge": 3114006,
+    "slug": "carmo_da_mata"
+  },
+  {
+    "ibge": 3114105,
+    "slug": "carmo_de_minas"
+  },
+  {
+    "ibge": 3114204,
+    "slug": "carmo_do_cajuru"
+  },
+  {
     "ibge": 3114303,
     "slug": "carmo_do_paranaiba"
+  },
+  {
+    "ibge": 3114402,
+    "slug": "carmo_do_rio_claro"
+  },
+  {
+    "ibge": 3114501,
+    "slug": "carmopolis_de_minas"
   },
   {
     "ibge": 3114550,
     "slug": "carneirinho"
   },
   {
+    "ibge": 3114600,
+    "slug": "carrancas"
+  },
+  {
+    "ibge": 3114709,
+    "slug": "carvalhopolis"
+  },
+  {
+    "ibge": 3114808,
+    "slug": "carvalhos"
+  },
+  {
+    "ibge": 3114907,
+    "slug": "casa_grande"
+  },
+  {
     "ibge": 3115003,
     "slug": "cascalho_rico"
+  },
+  {
+    "ibge": 3115102,
+    "slug": "cassia"
+  },
+  {
+    "ibge": 3115201,
+    "slug": "conceicao_da_barra_de_minas"
+  },
+  {
+    "ibge": 3115300,
+    "slug": "cataguases"
+  },
+  {
+    "ibge": 3115359,
+    "slug": "catas_altas"
+  },
+  {
+    "ibge": 3115409,
+    "slug": "catas_altas_da_noruega"
+  },
+  {
+    "ibge": 3115458,
+    "slug": "catuji"
+  },
+  {
+    "ibge": 3115474,
+    "slug": "catuti"
+  },
+  {
+    "ibge": 3115508,
+    "slug": "caxambu"
+  },
+  {
+    "ibge": 3115607,
+    "slug": "cedro_do_abaete"
+  },
+  {
+    "ibge": 3115706,
+    "slug": "central_de_minas"
   },
   {
     "ibge": 3115805,
     "slug": "centralina"
   },
   {
+    "ibge": 3115904,
+    "slug": "chacara"
+  },
+  {
+    "ibge": 3116001,
+    "slug": "chale"
+  },
+  {
+    "ibge": 3116100,
+    "slug": "chapada_do_norte"
+  },
+  {
+    "ibge": 3116159,
+    "slug": "chapada_gaucha"
+  },
+  {
+    "ibge": 3116209,
+    "slug": "chiador"
+  },
+  {
+    "ibge": 3116308,
+    "slug": "cipotanea"
+  },
+  {
+    "ibge": 3116407,
+    "slug": "claraval"
+  },
+  {
+    "ibge": 3116506,
+    "slug": "claro_dos_pocoes"
+  },
+  {
+    "ibge": 3116605,
+    "slug": "claudio"
+  },
+  {
+    "ibge": 3116704,
+    "slug": "coimbra"
+  },
+  {
+    "ibge": 3116803,
+    "slug": "coluna"
+  },
+  {
     "ibge": 3116902,
     "slug": "comendador_gomes"
+  },
+  {
+    "ibge": 3117009,
+    "slug": "comercinho"
+  },
+  {
+    "ibge": 3117108,
+    "slug": "conceicao_da_aparecida"
+  },
+  {
+    "ibge": 3117207,
+    "slug": "conceicao_das_pedras"
   },
   {
     "ibge": 3117306,
     "slug": "conceicao_das_alagoas"
   },
   {
+    "ibge": 3117405,
+    "slug": "conceicao_de_ipanema"
+  },
+  {
+    "ibge": 3117504,
+    "slug": "conceicao_do_mato_dentro"
+  },
+  {
+    "ibge": 3117603,
+    "slug": "conceicao_do_para"
+  },
+  {
+    "ibge": 3117702,
+    "slug": "conceicao_do_rio_verde"
+  },
+  {
+    "ibge": 3117801,
+    "slug": "conceicao_dos_ouros"
+  },
+  {
+    "ibge": 3117836,
+    "slug": "conego_marinho"
+  },
+  {
+    "ibge": 3117876,
+    "slug": "confins"
+  },
+  {
+    "ibge": 3117900,
+    "slug": "congonhal"
+  },
+  {
+    "ibge": 3118007,
+    "slug": "congonhas"
+  },
+  {
+    "ibge": 3118106,
+    "slug": "congonhas_do_norte"
+  },
+  {
     "ibge": 3118205,
     "slug": "conquista"
+  },
+  {
+    "ibge": 3118304,
+    "slug": "conselheiro_lafaiete"
+  },
+  {
+    "ibge": 3118403,
+    "slug": "conselheiro_pena"
+  },
+  {
+    "ibge": 3118502,
+    "slug": "consolacao"
+  },
+  {
+    "ibge": 3118601,
+    "slug": "contagem"
+  },
+  {
+    "ibge": 3118700,
+    "slug": "coqueiral"
+  },
+  {
+    "ibge": 3118809,
+    "slug": "coracao_de_jesus"
+  },
+  {
+    "ibge": 3118908,
+    "slug": "cordisburgo"
+  },
+  {
+    "ibge": 3119005,
+    "slug": "cordislandia"
+  },
+  {
+    "ibge": 3119104,
+    "slug": "corinto"
+  },
+  {
+    "ibge": 3119203,
+    "slug": "coroaci"
   },
   {
     "ibge": 3119302,
     "slug": "coromandel"
   },
   {
+    "ibge": 3119401,
+    "slug": "coronel_fabriciano"
+  },
+  {
+    "ibge": 3119500,
+    "slug": "coronel_murta"
+  },
+  {
+    "ibge": 3119609,
+    "slug": "coronel_pacheco"
+  },
+  {
+    "ibge": 3119708,
+    "slug": "coronel_xavier_chaves"
+  },
+  {
+    "ibge": 3119807,
+    "slug": "corrego_danta"
+  },
+  {
+    "ibge": 3119906,
+    "slug": "corrego_do_bom_jesus"
+  },
+  {
+    "ibge": 3119955,
+    "slug": "corrego_fundo"
+  },
+  {
+    "ibge": 3120003,
+    "slug": "corrego_novo"
+  },
+  {
+    "ibge": 3120102,
+    "slug": "couto_de_magalhaes_de_minas"
+  },
+  {
+    "ibge": 3120151,
+    "slug": "crisolita"
+  },
+  {
+    "ibge": 3120201,
+    "slug": "cristais"
+  },
+  {
+    "ibge": 3120300,
+    "slug": "cristalia"
+  },
+  {
+    "ibge": 3120409,
+    "slug": "cristiano_otoni"
+  },
+  {
+    "ibge": 3120508,
+    "slug": "cristina"
+  },
+  {
+    "ibge": 3120607,
+    "slug": "crucilandia"
+  },
+  {
     "ibge": 3120706,
     "slug": "cruzeiro_da_fortaleza"
+  },
+  {
+    "ibge": 3120805,
+    "slug": "cruzilia"
+  },
+  {
+    "ibge": 3120839,
+    "slug": "cuparaque"
+  },
+  {
+    "ibge": 3120870,
+    "slug": "curral_de_dentro"
+  },
+  {
+    "ibge": 3120904,
+    "slug": "curvelo"
+  },
+  {
+    "ibge": 3121001,
+    "slug": "datas"
+  },
+  {
+    "ibge": 3121100,
+    "slug": "delfim_moreira"
+  },
+  {
+    "ibge": 3121209,
+    "slug": "delfinopolis"
   },
   {
     "ibge": 3121258,
     "slug": "delta"
   },
   {
+    "ibge": 3121308,
+    "slug": "descoberto"
+  },
+  {
+    "ibge": 3121407,
+    "slug": "desterro_de_entre_rios"
+  },
+  {
+    "ibge": 3121506,
+    "slug": "desterro_do_melo"
+  },
+  {
+    "ibge": 3121605,
+    "slug": "diamantina"
+  },
+  {
+    "ibge": 3121704,
+    "slug": "diogo_de_vasconcelos"
+  },
+  {
+    "ibge": 3121803,
+    "slug": "dionisio"
+  },
+  {
+    "ibge": 3121902,
+    "slug": "divinesia"
+  },
+  {
+    "ibge": 3122009,
+    "slug": "divino"
+  },
+  {
+    "ibge": 3122108,
+    "slug": "divino_das_laranjeiras"
+  },
+  {
+    "ibge": 3122207,
+    "slug": "divinolandia_de_minas"
+  },
+  {
+    "ibge": 3122306,
+    "slug": "divinopolis"
+  },
+  {
+    "ibge": 3122355,
+    "slug": "divisa_alegre"
+  },
+  {
+    "ibge": 3122405,
+    "slug": "divisa_nova"
+  },
+  {
+    "ibge": 3122454,
+    "slug": "divisopolis"
+  },
+  {
+    "ibge": 3122470,
+    "slug": "dom_bosco"
+  },
+  {
+    "ibge": 3122504,
+    "slug": "dom_cavati"
+  },
+  {
+    "ibge": 3122603,
+    "slug": "dom_joaquim"
+  },
+  {
+    "ibge": 3122702,
+    "slug": "dom_silverio"
+  },
+  {
+    "ibge": 3122801,
+    "slug": "dom_vicoso"
+  },
+  {
+    "ibge": 3122900,
+    "slug": "dona_euzebia"
+  },
+  {
+    "ibge": 3123007,
+    "slug": "dores_de_campos"
+  },
+  {
+    "ibge": 3123106,
+    "slug": "dores_de_guanhaes"
+  },
+  {
+    "ibge": 3123205,
+    "slug": "dores_do_indaia"
+  },
+  {
+    "ibge": 3123304,
+    "slug": "dores_do_turvo"
+  },
+  {
+    "ibge": 3123403,
+    "slug": "doresopolis"
+  },
+  {
     "ibge": 3123502,
     "slug": "douradoquara"
+  },
+  {
+    "ibge": 3123528,
+    "slug": "durande"
+  },
+  {
+    "ibge": 3123601,
+    "slug": "eloi_mendes"
+  },
+  {
+    "ibge": 3123700,
+    "slug": "engenheiro_caldas"
+  },
+  {
+    "ibge": 3123809,
+    "slug": "engenheiro_navarro"
+  },
+  {
+    "ibge": 3123858,
+    "slug": "entre_folhas"
+  },
+  {
+    "ibge": 3123908,
+    "slug": "entre_rios_de_minas"
+  },
+  {
+    "ibge": 3124005,
+    "slug": "ervalia"
+  },
+  {
+    "ibge": 3124104,
+    "slug": "esmeraldas"
+  },
+  {
+    "ibge": 3124203,
+    "slug": "espera_feliz"
+  },
+  {
+    "ibge": 3124302,
+    "slug": "espinosa"
+  },
+  {
+    "ibge": 3124401,
+    "slug": "espirito_santo_do_dourado"
+  },
+  {
+    "ibge": 3124500,
+    "slug": "estiva"
+  },
+  {
+    "ibge": 3124609,
+    "slug": "estrela_dalva"
+  },
+  {
+    "ibge": 3124708,
+    "slug": "estrela_do_indaia"
   },
   {
     "ibge": 3124807,
     "slug": "estrela_do_sul"
   },
   {
+    "ibge": 3124906,
+    "slug": "eugenopolis"
+  },
+  {
+    "ibge": 3125002,
+    "slug": "ewbank_da_camara"
+  },
+  {
+    "ibge": 3125101,
+    "slug": "extrema"
+  },
+  {
+    "ibge": 3125200,
+    "slug": "fama"
+  },
+  {
+    "ibge": 3125309,
+    "slug": "faria_lemos"
+  },
+  {
+    "ibge": 3125408,
+    "slug": "felicio_dos_santos"
+  },
+  {
+    "ibge": 3125507,
+    "slug": "sao_goncalo_do_rio_preto"
+  },
+  {
+    "ibge": 3125606,
+    "slug": "felisburgo"
+  },
+  {
+    "ibge": 3125705,
+    "slug": "felixlandia"
+  },
+  {
+    "ibge": 3125804,
+    "slug": "fernandes_tourinho"
+  },
+  {
+    "ibge": 3125903,
+    "slug": "ferros"
+  },
+  {
+    "ibge": 3125952,
+    "slug": "fervedouro"
+  },
+  {
+    "ibge": 3126000,
+    "slug": "florestal"
+  },
+  {
+    "ibge": 3126109,
+    "slug": "formiga"
+  },
+  {
+    "ibge": 3126208,
+    "slug": "formoso"
+  },
+  {
+    "ibge": 3126307,
+    "slug": "fortaleza_de_minas"
+  },
+  {
+    "ibge": 3126406,
+    "slug": "fortuna_de_minas"
+  },
+  {
+    "ibge": 3126505,
+    "slug": "francisco_badaro"
+  },
+  {
+    "ibge": 3126604,
+    "slug": "francisco_dumont"
+  },
+  {
+    "ibge": 3126703,
+    "slug": "francisco_sa"
+  },
+  {
+    "ibge": 3126752,
+    "slug": "franciscopolis"
+  },
+  {
+    "ibge": 3126802,
+    "slug": "frei_gaspar"
+  },
+  {
+    "ibge": 3126901,
+    "slug": "frei_inocencio"
+  },
+  {
+    "ibge": 3126950,
+    "slug": "frei_lagonegro"
+  },
+  {
     "ibge": 3127008,
     "slug": "fronteira"
+  },
+  {
+    "ibge": 3127057,
+    "slug": "fronteira_dos_vales"
+  },
+  {
+    "ibge": 3127073,
+    "slug": "fruta_de_leite"
   },
   {
     "ibge": 3127107,
     "slug": "frutal"
   },
   {
+    "ibge": 3127206,
+    "slug": "funilandia"
+  },
+  {
+    "ibge": 3127305,
+    "slug": "galileia"
+  },
+  {
+    "ibge": 3127339,
+    "slug": "gameleiras"
+  },
+  {
+    "ibge": 3127354,
+    "slug": "glaucilandia"
+  },
+  {
+    "ibge": 3127370,
+    "slug": "goiabeira"
+  },
+  {
+    "ibge": 3127388,
+    "slug": "goiana"
+  },
+  {
+    "ibge": 3127404,
+    "slug": "goncalves"
+  },
+  {
+    "ibge": 3127503,
+    "slug": "gonzaga"
+  },
+  {
+    "ibge": 3127602,
+    "slug": "gouveia"
+  },
+  {
+    "ibge": 3127701,
+    "slug": "governador_valadares"
+  },
+  {
+    "ibge": 3127800,
+    "slug": "grao_mogol"
+  },
+  {
     "ibge": 3127909,
     "slug": "grupiara"
+  },
+  {
+    "ibge": 3128006,
+    "slug": "guanhaes"
+  },
+  {
+    "ibge": 3128105,
+    "slug": "guape"
+  },
+  {
+    "ibge": 3128204,
+    "slug": "guaraciaba"
+  },
+  {
+    "ibge": 3128253,
+    "slug": "guaraciama"
+  },
+  {
+    "ibge": 3128303,
+    "slug": "guaranesia"
+  },
+  {
+    "ibge": 3128402,
+    "slug": "guarani"
+  },
+  {
+    "ibge": 3128501,
+    "slug": "guarara"
+  },
+  {
+    "ibge": 3128600,
+    "slug": "guarda_mor"
+  },
+  {
+    "ibge": 3128709,
+    "slug": "guaxupe"
+  },
+  {
+    "ibge": 3128808,
+    "slug": "guidoval"
   },
   {
     "ibge": 3128907,
     "slug": "guimarania"
   },
   {
+    "ibge": 3129004,
+    "slug": "guiricema"
+  },
+  {
     "ibge": 3129103,
     "slug": "gurinhata"
+  },
+  {
+    "ibge": 3129202,
+    "slug": "heliodora"
+  },
+  {
+    "ibge": 3129301,
+    "slug": "iapu"
+  },
+  {
+    "ibge": 3129400,
+    "slug": "ibertioga"
   },
   {
     "ibge": 3129509,
     "slug": "ibia"
   },
   {
+    "ibge": 3129608,
+    "slug": "ibiai"
+  },
+  {
+    "ibge": 3129657,
+    "slug": "ibiracatu"
+  },
+  {
+    "ibge": 3129707,
+    "slug": "ibiraci"
+  },
+  {
+    "ibge": 3129806,
+    "slug": "ibirite"
+  },
+  {
+    "ibge": 3129905,
+    "slug": "ibitiura_de_minas"
+  },
+  {
+    "ibge": 3130002,
+    "slug": "ibituruna"
+  },
+  {
+    "ibge": 3130051,
+    "slug": "icarai_de_minas"
+  },
+  {
+    "ibge": 3130101,
+    "slug": "igarape"
+  },
+  {
+    "ibge": 3130200,
+    "slug": "igaratinga"
+  },
+  {
+    "ibge": 3130309,
+    "slug": "iguatama"
+  },
+  {
+    "ibge": 3130408,
+    "slug": "ijaci"
+  },
+  {
+    "ibge": 3130507,
+    "slug": "ilicinea"
+  },
+  {
+    "ibge": 3130556,
+    "slug": "imbe_de_minas"
+  },
+  {
+    "ibge": 3130606,
+    "slug": "inconfidentes"
+  },
+  {
+    "ibge": 3130655,
+    "slug": "indaiabira"
+  },
+  {
     "ibge": 3130705,
     "slug": "indianopolis"
+  },
+  {
+    "ibge": 3130804,
+    "slug": "ingai"
+  },
+  {
+    "ibge": 3130903,
+    "slug": "inhapim"
+  },
+  {
+    "ibge": 3131000,
+    "slug": "inhauma"
+  },
+  {
+    "ibge": 3131109,
+    "slug": "inimutaba"
+  },
+  {
+    "ibge": 3131158,
+    "slug": "ipaba"
+  },
+  {
+    "ibge": 3131208,
+    "slug": "ipanema"
+  },
+  {
+    "ibge": 3131307,
+    "slug": "ipatinga"
   },
   {
     "ibge": 3131406,
     "slug": "ipiacu"
   },
   {
+    "ibge": 3131505,
+    "slug": "ipuiuna"
+  },
+  {
     "ibge": 3131604,
     "slug": "irai_de_minas"
+  },
+  {
+    "ibge": 3131703,
+    "slug": "itabira"
+  },
+  {
+    "ibge": 3131802,
+    "slug": "itabirinha"
+  },
+  {
+    "ibge": 3131901,
+    "slug": "itabirito"
+  },
+  {
+    "ibge": 3132008,
+    "slug": "itacambira"
+  },
+  {
+    "ibge": 3132107,
+    "slug": "itacarambi"
+  },
+  {
+    "ibge": 3132206,
+    "slug": "itaguara"
+  },
+  {
+    "ibge": 3132305,
+    "slug": "itaipe"
+  },
+  {
+    "ibge": 3132404,
+    "slug": "itajuba"
+  },
+  {
+    "ibge": 3132503,
+    "slug": "itamarandiba"
+  },
+  {
+    "ibge": 3132602,
+    "slug": "itamarati_de_minas"
+  },
+  {
+    "ibge": 3132701,
+    "slug": "itambacuri"
+  },
+  {
+    "ibge": 3132800,
+    "slug": "itambe_do_mato_dentro"
+  },
+  {
+    "ibge": 3132909,
+    "slug": "itamogi"
+  },
+  {
+    "ibge": 3133006,
+    "slug": "itamonte"
+  },
+  {
+    "ibge": 3133105,
+    "slug": "itanhandu"
+  },
+  {
+    "ibge": 3133204,
+    "slug": "itanhomi"
+  },
+  {
+    "ibge": 3133303,
+    "slug": "itaobim"
   },
   {
     "ibge": 3133402,
     "slug": "itapagipe"
   },
   {
+    "ibge": 3133501,
+    "slug": "itapecerica"
+  },
+  {
+    "ibge": 3133600,
+    "slug": "itapeva"
+  },
+  {
+    "ibge": 3133709,
+    "slug": "itatiaiucu"
+  },
+  {
+    "ibge": 3133758,
+    "slug": "itau_de_minas"
+  },
+  {
+    "ibge": 3133808,
+    "slug": "itauna"
+  },
+  {
+    "ibge": 3133907,
+    "slug": "itaverava"
+  },
+  {
+    "ibge": 3134004,
+    "slug": "itinga"
+  },
+  {
+    "ibge": 3134103,
+    "slug": "itueta"
+  },
+  {
     "ibge": 3134202,
     "slug": "ituiutaba"
+  },
+  {
+    "ibge": 3134301,
+    "slug": "itumirim"
   },
   {
     "ibge": 3134400,
     "slug": "iturama"
   },
   {
+    "ibge": 3134509,
+    "slug": "itutinga"
+  },
+  {
+    "ibge": 3134608,
+    "slug": "jaboticatubas"
+  },
+  {
+    "ibge": 3134707,
+    "slug": "jacinto"
+  },
+  {
+    "ibge": 3134806,
+    "slug": "jacui"
+  },
+  {
+    "ibge": 3134905,
+    "slug": "jacutinga"
+  },
+  {
+    "ibge": 3135001,
+    "slug": "jaguaracu"
+  },
+  {
+    "ibge": 3135050,
+    "slug": "jaiba"
+  },
+  {
+    "ibge": 3135076,
+    "slug": "jampruca"
+  },
+  {
+    "ibge": 3135100,
+    "slug": "janauba"
+  },
+  {
+    "ibge": 3135209,
+    "slug": "januaria"
+  },
+  {
+    "ibge": 3135308,
+    "slug": "japaraiba"
+  },
+  {
+    "ibge": 3135357,
+    "slug": "japonvar"
+  },
+  {
+    "ibge": 3135407,
+    "slug": "jeceaba"
+  },
+  {
+    "ibge": 3135456,
+    "slug": "jenipapo_de_minas"
+  },
+  {
+    "ibge": 3135506,
+    "slug": "jequeri"
+  },
+  {
+    "ibge": 3135605,
+    "slug": "jequitai"
+  },
+  {
+    "ibge": 3135704,
+    "slug": "jequitiba"
+  },
+  {
+    "ibge": 3135803,
+    "slug": "jequitinhonha"
+  },
+  {
+    "ibge": 3135902,
+    "slug": "jesuania"
+  },
+  {
+    "ibge": 3136009,
+    "slug": "joaima"
+  },
+  {
+    "ibge": 3136108,
+    "slug": "joanesia"
+  },
+  {
+    "ibge": 3136207,
+    "slug": "joao_monlevade"
+  },
+  {
+    "ibge": 3136306,
+    "slug": "joao_pinheiro"
+  },
+  {
+    "ibge": 3136405,
+    "slug": "joaquim_felicio"
+  },
+  {
+    "ibge": 3136504,
+    "slug": "jordania"
+  },
+  {
+    "ibge": 3136520,
+    "slug": "jose_goncalves_de_minas"
+  },
+  {
+    "ibge": 3136553,
+    "slug": "jose_raydan"
+  },
+  {
+    "ibge": 3136579,
+    "slug": "josenopolis"
+  },
+  {
+    "ibge": 3136603,
+    "slug": "nova_uniao"
+  },
+  {
+    "ibge": 3136652,
+    "slug": "juatuba"
+  },
+  {
+    "ibge": 3136702,
+    "slug": "juiz_de_fora"
+  },
+  {
+    "ibge": 3136801,
+    "slug": "juramento"
+  },
+  {
+    "ibge": 3136900,
+    "slug": "juruaia"
+  },
+  {
+    "ibge": 3136959,
+    "slug": "juvenilia"
+  },
+  {
+    "ibge": 3137007,
+    "slug": "ladainha"
+  },
+  {
+    "ibge": 3137106,
+    "slug": "lagamar"
+  },
+  {
+    "ibge": 3137205,
+    "slug": "lagoa_da_prata"
+  },
+  {
+    "ibge": 3137304,
+    "slug": "lagoa_dos_patos"
+  },
+  {
+    "ibge": 3137403,
+    "slug": "lagoa_dourada"
+  },
+  {
     "ibge": 3137502,
     "slug": "lagoa_formosa"
+  },
+  {
+    "ibge": 3137536,
+    "slug": "lagoa_grande"
+  },
+  {
+    "ibge": 3137601,
+    "slug": "lagoa_santa"
+  },
+  {
+    "ibge": 3137700,
+    "slug": "lajinha"
+  },
+  {
+    "ibge": 3137809,
+    "slug": "lambari"
+  },
+  {
+    "ibge": 3137908,
+    "slug": "lamim"
+  },
+  {
+    "ibge": 3138005,
+    "slug": "laranjal"
+  },
+  {
+    "ibge": 3138104,
+    "slug": "lassance"
+  },
+  {
+    "ibge": 3138203,
+    "slug": "lavras"
+  },
+  {
+    "ibge": 3138302,
+    "slug": "leandro_ferreira"
+  },
+  {
+    "ibge": 3138351,
+    "slug": "leme_do_prado"
+  },
+  {
+    "ibge": 3138401,
+    "slug": "leopoldina"
+  },
+  {
+    "ibge": 3138500,
+    "slug": "liberdade"
+  },
+  {
+    "ibge": 3138609,
+    "slug": "lima_duarte"
   },
   {
     "ibge": 3138625,
     "slug": "limeira_do_oeste"
   },
   {
+    "ibge": 3138658,
+    "slug": "lontra"
+  },
+  {
+    "ibge": 3138674,
+    "slug": "luisburgo"
+  },
+  {
+    "ibge": 3138682,
+    "slug": "luislandia"
+  },
+  {
+    "ibge": 3138708,
+    "slug": "luminarias"
+  },
+  {
+    "ibge": 3138807,
+    "slug": "luz"
+  },
+  {
+    "ibge": 3138906,
+    "slug": "machacalis"
+  },
+  {
+    "ibge": 3139003,
+    "slug": "machado"
+  },
+  {
+    "ibge": 3139102,
+    "slug": "madre_de_deus_de_minas"
+  },
+  {
+    "ibge": 3139201,
+    "slug": "malacacheta"
+  },
+  {
+    "ibge": 3139250,
+    "slug": "mamonas"
+  },
+  {
+    "ibge": 3139300,
+    "slug": "manga"
+  },
+  {
+    "ibge": 3139409,
+    "slug": "manhuacu"
+  },
+  {
+    "ibge": 3139508,
+    "slug": "manhumirim"
+  },
+  {
+    "ibge": 3139607,
+    "slug": "mantena"
+  },
+  {
+    "ibge": 3139706,
+    "slug": "maravilhas"
+  },
+  {
+    "ibge": 3139805,
+    "slug": "mar_de_espanha"
+  },
+  {
+    "ibge": 3139904,
+    "slug": "maria_da_fe"
+  },
+  {
+    "ibge": 3140001,
+    "slug": "mariana"
+  },
+  {
+    "ibge": 3140100,
+    "slug": "marilac"
+  },
+  {
+    "ibge": 3140159,
+    "slug": "mario_campos"
+  },
+  {
+    "ibge": 3140209,
+    "slug": "maripa_de_minas"
+  },
+  {
+    "ibge": 3140308,
+    "slug": "marlieria"
+  },
+  {
+    "ibge": 3140407,
+    "slug": "marmelopolis"
+  },
+  {
+    "ibge": 3140506,
+    "slug": "martinho_campos"
+  },
+  {
+    "ibge": 3140530,
+    "slug": "martins_soares"
+  },
+  {
+    "ibge": 3140555,
+    "slug": "mata_verde"
+  },
+  {
+    "ibge": 3140605,
+    "slug": "materlandia"
+  },
+  {
+    "ibge": 3140704,
+    "slug": "mateus_leme"
+  },
+  {
+    "ibge": 3140803,
+    "slug": "matias_barbosa"
+  },
+  {
+    "ibge": 3140852,
+    "slug": "matias_cardoso"
+  },
+  {
+    "ibge": 3140902,
+    "slug": "matipo"
+  },
+  {
+    "ibge": 3141009,
+    "slug": "mato_verde"
+  },
+  {
+    "ibge": 3141108,
+    "slug": "matozinhos"
+  },
+  {
     "ibge": 3141207,
     "slug": "matutina"
+  },
+  {
+    "ibge": 3141306,
+    "slug": "medeiros"
+  },
+  {
+    "ibge": 3141405,
+    "slug": "medina"
+  },
+  {
+    "ibge": 3141504,
+    "slug": "mendes_pimentel"
+  },
+  {
+    "ibge": 3141603,
+    "slug": "merces"
+  },
+  {
+    "ibge": 3141702,
+    "slug": "mesquita"
+  },
+  {
+    "ibge": 3141801,
+    "slug": "minas_novas"
+  },
+  {
+    "ibge": 3141900,
+    "slug": "minduri"
+  },
+  {
+    "ibge": 3142007,
+    "slug": "mirabela"
+  },
+  {
+    "ibge": 3142106,
+    "slug": "miradouro"
+  },
+  {
+    "ibge": 3142205,
+    "slug": "mirai"
+  },
+  {
+    "ibge": 3142254,
+    "slug": "miravania"
+  },
+  {
+    "ibge": 3142304,
+    "slug": "moeda"
+  },
+  {
+    "ibge": 3142403,
+    "slug": "moema"
+  },
+  {
+    "ibge": 3142502,
+    "slug": "monjolos"
+  },
+  {
+    "ibge": 3142601,
+    "slug": "monsenhor_paulo"
+  },
+  {
+    "ibge": 3142700,
+    "slug": "montalvania"
   },
   {
     "ibge": 3142809,
     "slug": "monte_alegre_de_minas"
   },
   {
+    "ibge": 3142908,
+    "slug": "monte_azul"
+  },
+  {
+    "ibge": 3143005,
+    "slug": "monte_belo"
+  },
+  {
     "ibge": 3143104,
     "slug": "monte_carmelo"
   },
   {
+    "ibge": 3143153,
+    "slug": "monte_formoso"
+  },
+  {
+    "ibge": 3143203,
+    "slug": "monte_santo_de_minas"
+  },
+  {
+    "ibge": 3143302,
+    "slug": "montes_claros"
+  },
+  {
+    "ibge": 3143401,
+    "slug": "monte_siao"
+  },
+  {
+    "ibge": 3143450,
+    "slug": "montezuma"
+  },
+  {
+    "ibge": 3143500,
+    "slug": "morada_nova_de_minas"
+  },
+  {
+    "ibge": 3143609,
+    "slug": "morro_da_garca"
+  },
+  {
+    "ibge": 3143708,
+    "slug": "morro_do_pilar"
+  },
+  {
+    "ibge": 3143807,
+    "slug": "munhoz"
+  },
+  {
+    "ibge": 3143906,
+    "slug": "muriae"
+  },
+  {
+    "ibge": 3144003,
+    "slug": "mutum"
+  },
+  {
+    "ibge": 3144102,
+    "slug": "muzambinho"
+  },
+  {
+    "ibge": 3144201,
+    "slug": "nacip_raydan"
+  },
+  {
+    "ibge": 3144300,
+    "slug": "nanuque"
+  },
+  {
+    "ibge": 3144359,
+    "slug": "naque"
+  },
+  {
+    "ibge": 3144375,
+    "slug": "natalandia"
+  },
+  {
+    "ibge": 3144409,
+    "slug": "natercia"
+  },
+  {
+    "ibge": 3144508,
+    "slug": "nazareno"
+  },
+  {
+    "ibge": 3144607,
+    "slug": "nepomuceno"
+  },
+  {
+    "ibge": 3144656,
+    "slug": "ninheira"
+  },
+  {
+    "ibge": 3144672,
+    "slug": "nova_belem"
+  },
+  {
+    "ibge": 3144706,
+    "slug": "nova_era"
+  },
+  {
+    "ibge": 3144805,
+    "slug": "nova_lima"
+  },
+  {
+    "ibge": 3144904,
+    "slug": "nova_modica"
+  },
+  {
     "ibge": 3145000,
     "slug": "nova_ponte"
+  },
+  {
+    "ibge": 3145059,
+    "slug": "nova_porteirinha"
+  },
+  {
+    "ibge": 3145109,
+    "slug": "nova_resende"
+  },
+  {
+    "ibge": 3145208,
+    "slug": "nova_serrana"
+  },
+  {
+    "ibge": 3145307,
+    "slug": "novo_cruzeiro"
+  },
+  {
+    "ibge": 3145356,
+    "slug": "novo_oriente_de_minas"
+  },
+  {
+    "ibge": 3145372,
+    "slug": "novorizonte"
+  },
+  {
+    "ibge": 3145406,
+    "slug": "olaria"
+  },
+  {
+    "ibge": 3145455,
+    "slug": "olhos_d_agua"
+  },
+  {
+    "ibge": 3145505,
+    "slug": "olimpio_noronha"
+  },
+  {
+    "ibge": 3145604,
+    "slug": "oliveira"
+  },
+  {
+    "ibge": 3145703,
+    "slug": "oliveira_fortes"
+  },
+  {
+    "ibge": 3145802,
+    "slug": "onca_de_pitangui"
+  },
+  {
+    "ibge": 3145851,
+    "slug": "oratorios"
+  },
+  {
+    "ibge": 3145877,
+    "slug": "orizania"
+  },
+  {
+    "ibge": 3145901,
+    "slug": "ouro_branco"
+  },
+  {
+    "ibge": 3146008,
+    "slug": "ouro_fino"
+  },
+  {
+    "ibge": 3146107,
+    "slug": "ouro_preto"
+  },
+  {
+    "ibge": 3146206,
+    "slug": "ouro_verde_de_minas"
+  },
+  {
+    "ibge": 3146255,
+    "slug": "padre_carvalho"
+  },
+  {
+    "ibge": 3146305,
+    "slug": "padre_paraiso"
+  },
+  {
+    "ibge": 3146404,
+    "slug": "paineiras"
+  },
+  {
+    "ibge": 3146503,
+    "slug": "pains"
+  },
+  {
+    "ibge": 3146552,
+    "slug": "pai_pedro"
+  },
+  {
+    "ibge": 3146602,
+    "slug": "paiva"
+  },
+  {
+    "ibge": 3146701,
+    "slug": "palma"
+  },
+  {
+    "ibge": 3146750,
+    "slug": "palmopolis"
+  },
+  {
+    "ibge": 3146909,
+    "slug": "papagaios"
+  },
+  {
+    "ibge": 3147006,
+    "slug": "paracatu"
+  },
+  {
+    "ibge": 3147105,
+    "slug": "para_de_minas"
+  },
+  {
+    "ibge": 3147204,
+    "slug": "paraguacu"
+  },
+  {
+    "ibge": 3147303,
+    "slug": "paraisopolis"
+  },
+  {
+    "ibge": 3147402,
+    "slug": "paraopeba"
+  },
+  {
+    "ibge": 3147501,
+    "slug": "passabem"
+  },
+  {
+    "ibge": 3147600,
+    "slug": "passa_quatro"
+  },
+  {
+    "ibge": 3147709,
+    "slug": "passa_tempo"
+  },
+  {
+    "ibge": 3147808,
+    "slug": "passa_vinte"
+  },
+  {
+    "ibge": 3147907,
+    "slug": "passos"
+  },
+  {
+    "ibge": 3147956,
+    "slug": "patis"
   },
   {
     "ibge": 3148004,
@@ -176,44 +2248,536 @@
     "slug": "patrocinio"
   },
   {
+    "ibge": 3148202,
+    "slug": "patrocinio_do_muriae"
+  },
+  {
+    "ibge": 3148301,
+    "slug": "paula_candido"
+  },
+  {
+    "ibge": 3148400,
+    "slug": "paulistas"
+  },
+  {
+    "ibge": 3148509,
+    "slug": "pavao"
+  },
+  {
+    "ibge": 3148608,
+    "slug": "pecanha"
+  },
+  {
+    "ibge": 3148707,
+    "slug": "pedra_azul"
+  },
+  {
+    "ibge": 3148756,
+    "slug": "pedra_bonita"
+  },
+  {
+    "ibge": 3148806,
+    "slug": "pedra_do_anta"
+  },
+  {
+    "ibge": 3148905,
+    "slug": "pedra_do_indaia"
+  },
+  {
+    "ibge": 3149002,
+    "slug": "pedra_dourada"
+  },
+  {
+    "ibge": 3149101,
+    "slug": "pedralva"
+  },
+  {
+    "ibge": 3149150,
+    "slug": "pedras_de_maria_da_cruz"
+  },
+  {
     "ibge": 3149200,
     "slug": "pedrinopolis"
+  },
+  {
+    "ibge": 3149309,
+    "slug": "pedro_leopoldo"
+  },
+  {
+    "ibge": 3149408,
+    "slug": "pedro_teixeira"
+  },
+  {
+    "ibge": 3149507,
+    "slug": "pequeri"
+  },
+  {
+    "ibge": 3149606,
+    "slug": "pequi"
+  },
+  {
+    "ibge": 3149705,
+    "slug": "perdigao"
   },
   {
     "ibge": 3149804,
     "slug": "perdizes"
   },
   {
+    "ibge": 3149903,
+    "slug": "perdoes"
+  },
+  {
+    "ibge": 3149952,
+    "slug": "periquito"
+  },
+  {
+    "ibge": 3150000,
+    "slug": "pescador"
+  },
+  {
+    "ibge": 3150109,
+    "slug": "piau"
+  },
+  {
+    "ibge": 3150158,
+    "slug": "piedade_de_caratinga"
+  },
+  {
+    "ibge": 3150208,
+    "slug": "piedade_de_ponte_nova"
+  },
+  {
+    "ibge": 3150307,
+    "slug": "piedade_do_rio_grande"
+  },
+  {
+    "ibge": 3150406,
+    "slug": "piedade_dos_gerais"
+  },
+  {
+    "ibge": 3150505,
+    "slug": "pimenta"
+  },
+  {
+    "ibge": 3150539,
+    "slug": "pingo_d_agua"
+  },
+  {
+    "ibge": 3150570,
+    "slug": "pintopolis"
+  },
+  {
+    "ibge": 3150604,
+    "slug": "piracema"
+  },
+  {
     "ibge": 3150703,
     "slug": "pirajuba"
+  },
+  {
+    "ibge": 3150802,
+    "slug": "piranga"
+  },
+  {
+    "ibge": 3150901,
+    "slug": "pirangucu"
+  },
+  {
+    "ibge": 3151008,
+    "slug": "piranguinho"
+  },
+  {
+    "ibge": 3151107,
+    "slug": "pirapetinga"
+  },
+  {
+    "ibge": 3151206,
+    "slug": "pirapora"
+  },
+  {
+    "ibge": 3151305,
+    "slug": "pirauba"
+  },
+  {
+    "ibge": 3151404,
+    "slug": "pitangui"
+  },
+  {
+    "ibge": 3151503,
+    "slug": "piumhi"
   },
   {
     "ibge": 3151602,
     "slug": "planura"
   },
   {
+    "ibge": 3151701,
+    "slug": "poco_fundo"
+  },
+  {
+    "ibge": 3151800,
+    "slug": "pocos_de_caldas"
+  },
+  {
+    "ibge": 3151909,
+    "slug": "pocrane"
+  },
+  {
+    "ibge": 3152006,
+    "slug": "pompeu"
+  },
+  {
+    "ibge": 3152105,
+    "slug": "ponte_nova"
+  },
+  {
+    "ibge": 3152131,
+    "slug": "ponto_chique"
+  },
+  {
+    "ibge": 3152170,
+    "slug": "ponto_dos_volantes"
+  },
+  {
+    "ibge": 3152204,
+    "slug": "porteirinha"
+  },
+  {
+    "ibge": 3152303,
+    "slug": "porto_firme"
+  },
+  {
+    "ibge": 3152402,
+    "slug": "pote"
+  },
+  {
+    "ibge": 3152501,
+    "slug": "pouso_alegre"
+  },
+  {
+    "ibge": 3152600,
+    "slug": "pouso_alto"
+  },
+  {
+    "ibge": 3152709,
+    "slug": "prados"
+  },
+  {
     "ibge": 3152808,
     "slug": "prata"
+  },
+  {
+    "ibge": 3152907,
+    "slug": "pratapolis"
   },
   {
     "ibge": 3153004,
     "slug": "pratinha"
   },
   {
+    "ibge": 3153103,
+    "slug": "presidente_bernardes"
+  },
+  {
+    "ibge": 3153202,
+    "slug": "presidente_juscelino"
+  },
+  {
+    "ibge": 3153301,
+    "slug": "presidente_kubitschek"
+  },
+  {
+    "ibge": 3153400,
+    "slug": "presidente_olegario"
+  },
+  {
+    "ibge": 3153509,
+    "slug": "alto_jequitiba"
+  },
+  {
+    "ibge": 3153608,
+    "slug": "prudente_de_morais"
+  },
+  {
+    "ibge": 3153707,
+    "slug": "quartel_geral"
+  },
+  {
+    "ibge": 3153806,
+    "slug": "queluzito"
+  },
+  {
+    "ibge": 3153905,
+    "slug": "raposos"
+  },
+  {
+    "ibge": 3154002,
+    "slug": "raul_soares"
+  },
+  {
+    "ibge": 3154101,
+    "slug": "recreio"
+  },
+  {
+    "ibge": 3154150,
+    "slug": "reduto"
+  },
+  {
+    "ibge": 3154200,
+    "slug": "resende_costa"
+  },
+  {
+    "ibge": 3154309,
+    "slug": "resplendor"
+  },
+  {
+    "ibge": 3154408,
+    "slug": "ressaquinha"
+  },
+  {
+    "ibge": 3154457,
+    "slug": "riachinho"
+  },
+  {
+    "ibge": 3154507,
+    "slug": "riacho_dos_machados"
+  },
+  {
+    "ibge": 3154606,
+    "slug": "ribeirao_das_neves"
+  },
+  {
+    "ibge": 3154705,
+    "slug": "ribeirao_vermelho"
+  },
+  {
+    "ibge": 3154804,
+    "slug": "rio_acima"
+  },
+  {
+    "ibge": 3154903,
+    "slug": "rio_casca"
+  },
+  {
+    "ibge": 3155009,
+    "slug": "rio_doce"
+  },
+  {
+    "ibge": 3155108,
+    "slug": "rio_do_prado"
+  },
+  {
+    "ibge": 3155207,
+    "slug": "rio_espera"
+  },
+  {
+    "ibge": 3155306,
+    "slug": "rio_manso"
+  },
+  {
+    "ibge": 3155405,
+    "slug": "rio_novo"
+  },
+  {
     "ibge": 3155504,
     "slug": "rio_paranaiba"
+  },
+  {
+    "ibge": 3155603,
+    "slug": "rio_pardo_de_minas"
+  },
+  {
+    "ibge": 3155702,
+    "slug": "rio_piracicaba"
+  },
+  {
+    "ibge": 3155801,
+    "slug": "rio_pomba"
+  },
+  {
+    "ibge": 3155900,
+    "slug": "rio_preto"
+  },
+  {
+    "ibge": 3156007,
+    "slug": "rio_vermelho"
+  },
+  {
+    "ibge": 3156106,
+    "slug": "ritapolis"
+  },
+  {
+    "ibge": 3156205,
+    "slug": "rochedo_de_minas"
+  },
+  {
+    "ibge": 3156304,
+    "slug": "rodeiro"
   },
   {
     "ibge": 3156403,
     "slug": "romaria"
   },
   {
+    "ibge": 3156452,
+    "slug": "rosario_da_limeira"
+  },
+  {
+    "ibge": 3156502,
+    "slug": "rubelita"
+  },
+  {
+    "ibge": 3156601,
+    "slug": "rubim"
+  },
+  {
+    "ibge": 3156700,
+    "slug": "sabara"
+  },
+  {
+    "ibge": 3156809,
+    "slug": "sabinopolis"
+  },
+  {
     "ibge": 3156908,
     "slug": "sacramento"
   },
   {
+    "ibge": 3157005,
+    "slug": "salinas"
+  },
+  {
+    "ibge": 3157104,
+    "slug": "salto_da_divisa"
+  },
+  {
+    "ibge": 3157203,
+    "slug": "santa_barbara"
+  },
+  {
+    "ibge": 3157252,
+    "slug": "santa_barbara_do_leste"
+  },
+  {
+    "ibge": 3157278,
+    "slug": "santa_barbara_do_monte_verde"
+  },
+  {
+    "ibge": 3157302,
+    "slug": "santa_barbara_do_tugurio"
+  },
+  {
+    "ibge": 3157336,
+    "slug": "santa_cruz_de_minas"
+  },
+  {
+    "ibge": 3157377,
+    "slug": "santa_cruz_de_salinas"
+  },
+  {
+    "ibge": 3157401,
+    "slug": "santa_cruz_do_escalvado"
+  },
+  {
+    "ibge": 3157500,
+    "slug": "santa_efigenia_de_minas"
+  },
+  {
+    "ibge": 3157609,
+    "slug": "santa_fe_de_minas"
+  },
+  {
+    "ibge": 3157658,
+    "slug": "santa_helena_de_minas"
+  },
+  {
     "ibge": 3157708,
     "slug": "santa_juliana"
+  },
+  {
+    "ibge": 3157807,
+    "slug": "santa_luzia"
+  },
+  {
+    "ibge": 3157906,
+    "slug": "santa_margarida"
+  },
+  {
+    "ibge": 3158003,
+    "slug": "santa_maria_de_itabira"
+  },
+  {
+    "ibge": 3158102,
+    "slug": "santa_maria_do_salto"
+  },
+  {
+    "ibge": 3158201,
+    "slug": "santa_maria_do_suacui"
+  },
+  {
+    "ibge": 3158300,
+    "slug": "santana_da_vargem"
+  },
+  {
+    "ibge": 3158409,
+    "slug": "santana_de_cataguases"
+  },
+  {
+    "ibge": 3158508,
+    "slug": "santana_de_pirapama"
+  },
+  {
+    "ibge": 3158607,
+    "slug": "santana_do_deserto"
+  },
+  {
+    "ibge": 3158706,
+    "slug": "santana_do_garambeu"
+  },
+  {
+    "ibge": 3158805,
+    "slug": "santana_do_jacare"
+  },
+  {
+    "ibge": 3158904,
+    "slug": "santana_do_manhuacu"
+  },
+  {
+    "ibge": 3158953,
+    "slug": "santana_do_paraiso"
+  },
+  {
+    "ibge": 3159001,
+    "slug": "santana_do_riacho"
+  },
+  {
+    "ibge": 3159100,
+    "slug": "santana_dos_montes"
+  },
+  {
+    "ibge": 3159209,
+    "slug": "santa_rita_de_caldas"
+  },
+  {
+    "ibge": 3159308,
+    "slug": "santa_rita_de_jacutinga"
+  },
+  {
+    "ibge": 3159357,
+    "slug": "santa_rita_de_minas"
+  },
+  {
+    "ibge": 3159407,
+    "slug": "santa_rita_de_ibitipoca"
+  },
+  {
+    "ibge": 3159506,
+    "slug": "santa_rita_do_itueto"
+  },
+  {
+    "ibge": 3159605,
+    "slug": "santa_rita_do_sapucai"
   },
   {
     "ibge": 3159704,
@@ -224,28 +2788,504 @@
     "slug": "santa_vitoria"
   },
   {
+    "ibge": 3159902,
+    "slug": "santo_antonio_do_amparo"
+  },
+  {
+    "ibge": 3160009,
+    "slug": "santo_antonio_do_aventureiro"
+  },
+  {
+    "ibge": 3160108,
+    "slug": "santo_antonio_do_grama"
+  },
+  {
+    "ibge": 3160207,
+    "slug": "santo_antonio_do_itambe"
+  },
+  {
+    "ibge": 3160306,
+    "slug": "santo_antonio_do_jacinto"
+  },
+  {
+    "ibge": 3160405,
+    "slug": "santo_antonio_do_monte"
+  },
+  {
+    "ibge": 3160454,
+    "slug": "santo_antonio_do_retiro"
+  },
+  {
+    "ibge": 3160504,
+    "slug": "santo_antonio_do_rio_abaixo"
+  },
+  {
+    "ibge": 3160603,
+    "slug": "santo_hipolito"
+  },
+  {
+    "ibge": 3160702,
+    "slug": "santos_dumont"
+  },
+  {
+    "ibge": 3160801,
+    "slug": "sao_bento_abade"
+  },
+  {
+    "ibge": 3160900,
+    "slug": "sao_bras_do_suacui"
+  },
+  {
+    "ibge": 3160959,
+    "slug": "sao_domingos_das_dores"
+  },
+  {
+    "ibge": 3161007,
+    "slug": "sao_domingos_do_prata"
+  },
+  {
+    "ibge": 3161056,
+    "slug": "sao_felix_de_minas"
+  },
+  {
+    "ibge": 3161106,
+    "slug": "sao_francisco"
+  },
+  {
+    "ibge": 3161205,
+    "slug": "sao_francisco_de_paula"
+  },
+  {
     "ibge": 3161304,
     "slug": "sao_francisco_de_sales"
+  },
+  {
+    "ibge": 3161403,
+    "slug": "sao_francisco_do_gloria"
+  },
+  {
+    "ibge": 3161502,
+    "slug": "sao_geraldo"
+  },
+  {
+    "ibge": 3161601,
+    "slug": "sao_geraldo_da_piedade"
+  },
+  {
+    "ibge": 3161650,
+    "slug": "sao_geraldo_do_baixio"
+  },
+  {
+    "ibge": 3161700,
+    "slug": "sao_goncalo_do_abaete"
+  },
+  {
+    "ibge": 3161809,
+    "slug": "sao_goncalo_do_para"
+  },
+  {
+    "ibge": 3161908,
+    "slug": "sao_goncalo_do_rio_abaixo"
+  },
+  {
+    "ibge": 3162005,
+    "slug": "sao_goncalo_do_sapucai"
   },
   {
     "ibge": 3162104,
     "slug": "sao_gotardo"
   },
   {
+    "ibge": 3162203,
+    "slug": "sao_joao_batista_do_gloria"
+  },
+  {
+    "ibge": 3162252,
+    "slug": "sao_joao_da_lagoa"
+  },
+  {
+    "ibge": 3162302,
+    "slug": "sao_joao_da_mata"
+  },
+  {
+    "ibge": 3162401,
+    "slug": "sao_joao_da_ponte"
+  },
+  {
+    "ibge": 3162450,
+    "slug": "sao_joao_das_missoes"
+  },
+  {
+    "ibge": 3162500,
+    "slug": "sao_joao_del_rei"
+  },
+  {
+    "ibge": 3162559,
+    "slug": "sao_joao_do_manhuacu"
+  },
+  {
+    "ibge": 3162575,
+    "slug": "sao_joao_do_manteninha"
+  },
+  {
+    "ibge": 3162609,
+    "slug": "sao_joao_do_oriente"
+  },
+  {
+    "ibge": 3162658,
+    "slug": "sao_joao_do_pacui"
+  },
+  {
+    "ibge": 3162708,
+    "slug": "sao_joao_do_paraiso"
+  },
+  {
+    "ibge": 3162807,
+    "slug": "sao_joao_evangelista"
+  },
+  {
+    "ibge": 3162906,
+    "slug": "sao_joao_nepomuceno"
+  },
+  {
+    "ibge": 3162922,
+    "slug": "sao_joaquim_de_bicas"
+  },
+  {
+    "ibge": 3162948,
+    "slug": "sao_jose_da_barra"
+  },
+  {
+    "ibge": 3162955,
+    "slug": "sao_jose_da_lapa"
+  },
+  {
+    "ibge": 3163003,
+    "slug": "sao_jose_da_safira"
+  },
+  {
+    "ibge": 3163102,
+    "slug": "sao_jose_da_varginha"
+  },
+  {
+    "ibge": 3163201,
+    "slug": "sao_jose_do_alegre"
+  },
+  {
+    "ibge": 3163300,
+    "slug": "sao_jose_do_divino"
+  },
+  {
+    "ibge": 3163409,
+    "slug": "sao_jose_do_goiabal"
+  },
+  {
+    "ibge": 3163508,
+    "slug": "sao_jose_do_jacuri"
+  },
+  {
+    "ibge": 3163607,
+    "slug": "sao_jose_do_mantimento"
+  },
+  {
+    "ibge": 3163706,
+    "slug": "sao_lourenco"
+  },
+  {
+    "ibge": 3163805,
+    "slug": "sao_miguel_do_anta"
+  },
+  {
+    "ibge": 3163904,
+    "slug": "sao_pedro_da_uniao"
+  },
+  {
+    "ibge": 3164001,
+    "slug": "sao_pedro_dos_ferros"
+  },
+  {
+    "ibge": 3164100,
+    "slug": "sao_pedro_do_suacui"
+  },
+  {
+    "ibge": 3164209,
+    "slug": "sao_romao"
+  },
+  {
+    "ibge": 3164308,
+    "slug": "sao_roque_de_minas"
+  },
+  {
+    "ibge": 3164407,
+    "slug": "sao_sebastiao_da_bela_vista"
+  },
+  {
+    "ibge": 3164431,
+    "slug": "sao_sebastiao_da_vargem_alegre"
+  },
+  {
+    "ibge": 3164472,
+    "slug": "sao_sebastiao_do_anta"
+  },
+  {
+    "ibge": 3164506,
+    "slug": "sao_sebastiao_do_maranhao"
+  },
+  {
+    "ibge": 3164605,
+    "slug": "sao_sebastiao_do_oeste"
+  },
+  {
+    "ibge": 3164704,
+    "slug": "sao_sebastiao_do_paraiso"
+  },
+  {
+    "ibge": 3164803,
+    "slug": "sao_sebastiao_do_rio_preto"
+  },
+  {
+    "ibge": 3164902,
+    "slug": "sao_sebastiao_do_rio_verde"
+  },
+  {
+    "ibge": 3165008,
+    "slug": "sao_tiago"
+  },
+  {
+    "ibge": 3165107,
+    "slug": "sao_tomas_de_aquino"
+  },
+  {
+    "ibge": 3165206,
+    "slug": "sao_tome_das_letras"
+  },
+  {
+    "ibge": 3165305,
+    "slug": "sao_vicente_de_minas"
+  },
+  {
+    "ibge": 3165404,
+    "slug": "sapucai_mirim"
+  },
+  {
+    "ibge": 3165503,
+    "slug": "sardoa"
+  },
+  {
+    "ibge": 3165537,
+    "slug": "sarzedo"
+  },
+  {
+    "ibge": 3165552,
+    "slug": "setubinha"
+  },
+  {
+    "ibge": 3165560,
+    "slug": "sem_peixe"
+  },
+  {
+    "ibge": 3165578,
+    "slug": "senador_amaral"
+  },
+  {
+    "ibge": 3165602,
+    "slug": "senador_cortes"
+  },
+  {
+    "ibge": 3165701,
+    "slug": "senador_firmino"
+  },
+  {
+    "ibge": 3165800,
+    "slug": "senador_jose_bento"
+  },
+  {
+    "ibge": 3165909,
+    "slug": "senador_modestino_goncalves"
+  },
+  {
+    "ibge": 3166006,
+    "slug": "senhora_de_oliveira"
+  },
+  {
+    "ibge": 3166105,
+    "slug": "senhora_do_porto"
+  },
+  {
+    "ibge": 3166204,
+    "slug": "senhora_dos_remedios"
+  },
+  {
+    "ibge": 3166303,
+    "slug": "sericita"
+  },
+  {
+    "ibge": 3166402,
+    "slug": "seritinga"
+  },
+  {
+    "ibge": 3166501,
+    "slug": "serra_azul_de_minas"
+  },
+  {
+    "ibge": 3166600,
+    "slug": "serra_da_saudade"
+  },
+  {
+    "ibge": 3166709,
+    "slug": "serra_dos_aimores"
+  },
+  {
     "ibge": 3166808,
     "slug": "serra_do_salitre"
+  },
+  {
+    "ibge": 3166907,
+    "slug": "serrania"
+  },
+  {
+    "ibge": 3166956,
+    "slug": "serranopolis_de_minas"
+  },
+  {
+    "ibge": 3167004,
+    "slug": "serranos"
+  },
+  {
+    "ibge": 3167103,
+    "slug": "serro"
+  },
+  {
+    "ibge": 3167202,
+    "slug": "sete_lagoas"
+  },
+  {
+    "ibge": 3167301,
+    "slug": "silveirania"
+  },
+  {
+    "ibge": 3167400,
+    "slug": "silvianopolis"
+  },
+  {
+    "ibge": 3167509,
+    "slug": "simao_pereira"
+  },
+  {
+    "ibge": 3167608,
+    "slug": "simonesia"
+  },
+  {
+    "ibge": 3167707,
+    "slug": "sobralia"
+  },
+  {
+    "ibge": 3167806,
+    "slug": "soledade_de_minas"
+  },
+  {
+    "ibge": 3167905,
+    "slug": "tabuleiro"
+  },
+  {
+    "ibge": 3168002,
+    "slug": "taiobeiras"
+  },
+  {
+    "ibge": 3168051,
+    "slug": "taparuba"
   },
   {
     "ibge": 3168101,
     "slug": "tapira"
   },
   {
+    "ibge": 3168200,
+    "slug": "tapirai"
+  },
+  {
+    "ibge": 3168309,
+    "slug": "taquaracu_de_minas"
+  },
+  {
+    "ibge": 3168408,
+    "slug": "tarumirim"
+  },
+  {
+    "ibge": 3168507,
+    "slug": "teixeiras"
+  },
+  {
+    "ibge": 3168606,
+    "slug": "teofilo_otoni"
+  },
+  {
+    "ibge": 3168705,
+    "slug": "timoteo"
+  },
+  {
+    "ibge": 3168804,
+    "slug": "tiradentes"
+  },
+  {
     "ibge": 3168903,
     "slug": "tiros"
   },
   {
+    "ibge": 3169000,
+    "slug": "tocantins"
+  },
+  {
+    "ibge": 3169059,
+    "slug": "tocos_do_moji"
+  },
+  {
+    "ibge": 3169109,
+    "slug": "toledo"
+  },
+  {
+    "ibge": 3169208,
+    "slug": "tombos"
+  },
+  {
+    "ibge": 3169307,
+    "slug": "tres_coracoes"
+  },
+  {
+    "ibge": 3169356,
+    "slug": "tres_marias"
+  },
+  {
+    "ibge": 3169406,
+    "slug": "tres_pontas"
+  },
+  {
+    "ibge": 3169505,
+    "slug": "tumiritinga"
+  },
+  {
     "ibge": 3169604,
     "slug": "tupaciguara"
+  },
+  {
+    "ibge": 3169703,
+    "slug": "turmalina"
+  },
+  {
+    "ibge": 3169802,
+    "slug": "turvolandia"
+  },
+  {
+    "ibge": 3169901,
+    "slug": "uba"
+  },
+  {
+    "ibge": 3170008,
+    "slug": "ubai"
+  },
+  {
+    "ibge": 3170057,
+    "slug": "ubaporanga"
   },
   {
     "ibge": 3170107,
@@ -256,11 +3296,119 @@
     "slug": "uberlandia"
   },
   {
+    "ibge": 3170305,
+    "slug": "umburatiba"
+  },
+  {
+    "ibge": 3170404,
+    "slug": "unai"
+  },
+  {
     "ibge": 3170438,
     "slug": "uniao_de_minas"
   },
   {
+    "ibge": 3170479,
+    "slug": "uruana_de_minas"
+  },
+  {
+    "ibge": 3170503,
+    "slug": "urucania"
+  },
+  {
+    "ibge": 3170529,
+    "slug": "urucuia"
+  },
+  {
+    "ibge": 3170578,
+    "slug": "vargem_alegre"
+  },
+  {
+    "ibge": 3170602,
+    "slug": "vargem_bonita"
+  },
+  {
+    "ibge": 3170651,
+    "slug": "vargem_grande_do_rio_pardo"
+  },
+  {
+    "ibge": 3170701,
+    "slug": "varginha"
+  },
+  {
+    "ibge": 3170750,
+    "slug": "varjao_de_minas"
+  },
+  {
+    "ibge": 3170800,
+    "slug": "varzea_da_palma"
+  },
+  {
+    "ibge": 3170909,
+    "slug": "varzelandia"
+  },
+  {
+    "ibge": 3171006,
+    "slug": "vazante"
+  },
+  {
+    "ibge": 3171030,
+    "slug": "verdelandia"
+  },
+  {
+    "ibge": 3171071,
+    "slug": "veredinha"
+  },
+  {
     "ibge": 3171105,
     "slug": "verissimo"
+  },
+  {
+    "ibge": 3171154,
+    "slug": "vermelho_novo"
+  },
+  {
+    "ibge": 3171204,
+    "slug": "vespasiano"
+  },
+  {
+    "ibge": 3171303,
+    "slug": "vicosa"
+  },
+  {
+    "ibge": 3171402,
+    "slug": "vieiras"
+  },
+  {
+    "ibge": 3171501,
+    "slug": "mathias_lobato"
+  },
+  {
+    "ibge": 3171600,
+    "slug": "virgem_da_lapa"
+  },
+  {
+    "ibge": 3171709,
+    "slug": "virginia"
+  },
+  {
+    "ibge": 3171808,
+    "slug": "virginopolis"
+  },
+  {
+    "ibge": 3171907,
+    "slug": "virgolandia"
+  },
+  {
+    "ibge": 3172004,
+    "slug": "visconde_do_rio_branco"
+  },
+  {
+    "ibge": 3172103,
+    "slug": "volta_grande"
+  },
+  {
+    "ibge": 3172202,
+    "slug": "wenceslau_braz"
   }
 ]
