@@ -13,6 +13,11 @@ interface ManifestRow {
   slug: string
 }
 
+interface ColetadasFile {
+  nome_meso?: string
+  queue: Array<{ ibge: number }>
+}
+
 interface UFGroup {
   uf: string
   nome: string
@@ -25,15 +30,25 @@ export function ListaMapeados({
   onNavigate: (v: View) => void
 }) {
   const [groups, setGroups] = useState<UFGroup[] | null>(null)
+  const [meso, setMeso] = useState<string | null>(null)
   const [erro, setErro] = useState(false)
 
   useEffect(() => {
     let cancelled = false
-    fetch(`${import.meta.env.BASE_URL}data/enriquecido/_index.json`)
-      .then((r) => (r.ok ? (r.json() as Promise<ManifestRow[]>) : []))
-      .then((rows) => {
+    Promise.all([
+      fetch(`${import.meta.env.BASE_URL}data/enriquecido/_index.json`).then(
+        (r) => (r.ok ? (r.json() as Promise<ManifestRow[]>) : [])
+      ),
+      fetch(`${import.meta.env.BASE_URL}data/coletadas.json`).then((r) =>
+        r.ok ? (r.json() as Promise<ColetadasFile>) : { queue: [] }
+      ),
+    ])
+      .then(([rows, coletadas]) => {
         if (cancelled) return
-        setGroups(groupByUF(rows))
+        const allow = new Set(coletadas.queue.map((q) => q.ibge))
+        const filtered = rows.filter((r) => allow.has(r.ibge))
+        setGroups(groupByUF(filtered))
+        setMeso(coletadas.nome_meso ?? null)
       })
       .catch(() => {
         if (!cancelled) setErro(true)
@@ -61,13 +76,14 @@ export function ListaMapeados({
           <div className="num text-[11px] mt-3 text-ink-50 flex gap-4 flex-wrap">
             <span>
               <span className="text-ink">{totalMun.toLocaleString('pt-BR')}</span>{' '}
-              municípios
+              municípios coletados
             </span>
-            <span>·</span>
-            <span>
-              <span className="text-ink">{groups.length}</span>{' '}
-              {groups.length === 1 ? 'unidade federativa' : 'unidades federativas'}
-            </span>
+            {meso && (
+              <>
+                <span>·</span>
+                <span>{meso}</span>
+              </>
+            )}
           </div>
         )}
       </header>
