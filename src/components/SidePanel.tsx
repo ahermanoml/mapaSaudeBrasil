@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'motion/react'
 import { useEffect, useMemo, useState } from 'react'
-import type { View, RegionId, Municipio } from '../types'
+import type { MapView, RegionId, Municipio } from '../types'
 import { REGIONS, REGION_ORDER } from '../data/regions'
 import { STATES_BY_SIGLA, STATES_GEO } from '../data/states'
 import { MUNICIPIOS_BY_UF, MUNICIPIOS_BY_ID } from '../data/municipios'
@@ -11,7 +11,7 @@ import {
 } from '../data/cnes'
 
 interface SidePanelProps {
-  view: View
+  view: MapView
   hoveredRegion: RegionId | null
   hoveredUF: string | null
   hoveredMun: number | null
@@ -52,7 +52,7 @@ export function SidePanel(props: SidePanelProps) {
   )
 }
 
-function panelKey(view: View): string {
+function panelKey(view: MapView): string {
   if (view.kind === 'brasil') return 'br'
   if (view.kind === 'regiao') return `reg-${view.regiao}`
   if (view.kind === 'estado') return `uf-${view.uf}`

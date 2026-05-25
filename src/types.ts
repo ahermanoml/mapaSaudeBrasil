@@ -36,3 +36,6 @@ export type View =
   | { kind: 'regiao'; regiao: RegionId }
   | { kind: 'estado'; uf: string }
   | { kind: 'cidade'; uf: string; municipioId: number }
+  | { kind: 'lista' }
+
+export type MapView = Exclude<View, { kind: 'lista' }>

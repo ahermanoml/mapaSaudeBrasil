@@ -15,13 +15,13 @@ import {
   fetchMunicipiosGeo,
   type MunicipioGeoCollection,
 } from '../data/ibge'
-import type { RegionId, StateProps, View } from '../types'
+import type { RegionId, StateProps, MapView } from '../types'
 
 const W = 920
 const H = 920
 
 interface AtlasMapProps {
-  view: View
+  view: MapView
   hoveredRegion: RegionId | null
   hoveredUF: string | null
   hoveredMun: number | null
@@ -282,7 +282,7 @@ export function AtlasMap(props: AtlasMapProps) {
 }
 
 interface StatesLayerProps {
-  view: View
+  view: MapView
   hoveredRegion: RegionId | null
   hoveredUF: string | null
   onHoverRegion: (r: RegionId | null) => void
@@ -370,7 +370,7 @@ const StatesLayer = memo(function StatesLayer({
 })
 
 interface StateLabelsProps {
-  view: View
+  view: MapView
   hoveredRegion: RegionId | null
   hoveredUF: string | null
   zoomMV: MotionValue<number>
@@ -589,7 +589,7 @@ function padBounds(
   return [x0 - pad, y0 - pad, w + pad * 2, h + pad * 2]
 }
 
-function scopeIncludesUF(view: View, uf: StateProps): boolean {
+function scopeIncludesUF(view: MapView, uf: StateProps): boolean {
   if (view.kind === 'brasil') return true
   if (view.kind === 'regiao') return uf.regiao === view.regiao
   return uf.sigla === view.uf

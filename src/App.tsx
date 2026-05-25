@@ -6,6 +6,7 @@ import { SidePanel } from './components/SidePanel'
 import { SearchBox } from './components/SearchBox'
 import { CompassRose } from './components/CompassRose'
 import { ScaleBar } from './components/ScaleBar'
+import { ListaMapeados } from './components/ListaMapeados'
 import { MUNICIPIOS_BY_ID } from './data/municipios'
 import { STATES_BY_SIGLA } from './data/states'
 import type { RegionId, View } from './types'
@@ -51,6 +52,7 @@ export default function App() {
         return { kind: 'brasil' }
       }
       if (v.kind === 'regiao') return { kind: 'brasil' }
+      if (v.kind === 'lista') return { kind: 'brasil' }
       return v
     })
   }, [])
@@ -82,7 +84,7 @@ export default function App() {
   }, [])
 
   const scope = useMemo<'brasil' | 'regiao' | 'estado' | 'cidade'>(
-    () => view.kind,
+    () => (view.kind === 'lista' ? 'brasil' : view.kind),
     [view]
   )
 
@@ -92,6 +94,19 @@ export default function App() {
       <div className="grain absolute inset-0 pointer-events-none" />
 
       <div className="relative max-w-[1480px] mx-auto px-8 lg:px-12 py-8 lg:py-10">
+        <div className="mb-4 flex items-center gap-3">
+          <span className="num text-[10px] tracking-[0.3em] uppercase text-ink-50">
+            ↳
+          </span>
+          <button
+            type="button"
+            onClick={() => setView({ kind: 'lista' })}
+            className="font-display italic text-base lg:text-lg text-ink-70 hover:text-ink underline decoration-ink-30 hover:decoration-ink underline-offset-4 transition-colors"
+            style={{ fontVariationSettings: '"opsz" 18, "SOFT" 50' }}
+          >
+            Lista de municípios mapeados
+          </button>
+        </div>
         {/* Header */}
         <header className="grid grid-cols-12 gap-6 lg:gap-10 items-end">
           <motion.div
@@ -158,63 +173,80 @@ export default function App() {
 
         <div className="rule h-px w-full mt-8" />
 
-        <div className="mt-6 flex items-end justify-between gap-6 flex-wrap">
-          <Breadcrumb view={view} onNavigate={setView} />
-          <div className="flex items-center gap-6">
-            <ScaleBar scope={scope} />
-            <button
-              type="button"
-              onClick={stepBack}
-              disabled={view.kind === 'brasil'}
-              className="num text-[10px] tracking-[0.22em] uppercase border border-ink-15 hover:border-ink px-3 py-2 disabled:opacity-30 disabled:cursor-default transition-colors"
-            >
-              ← voltar
-            </button>
-          </div>
-        </div>
-
-        <main className="grid grid-cols-12 gap-6 lg:gap-10 mt-8">
-          <section className="col-span-12 lg:col-span-8 relative">
-            <div className="aspect-square w-full bg-paper-warm hairline relative overflow-hidden">
-              <CornerLabel pos="tl">A</CornerLabel>
-              <CornerLabel pos="tr">N</CornerLabel>
-              <CornerLabel pos="bl">S</CornerLabel>
-              <CornerLabel pos="br">{scopeShort(scope)}</CornerLabel>
-              <AtlasMap
-                view={view}
-                hoveredRegion={hoveredRegion}
-                hoveredUF={hoveredUF}
-                hoveredMun={hoveredMun}
-                onHoverRegion={setHoveredRegion}
-                onHoverUF={setHoveredUF}
-                onHoverMun={setHoveredMun}
-                onSelectRegion={onSelectRegion}
-                onSelectUF={onSelectUF}
-                onSelectMun={onSelectMun}
-              />
-              <div className="absolute right-3 bottom-3 opacity-80">
-                <CompassRose size={72} />
+        {view.kind === 'lista' ? (
+          <main className="mt-8">
+            <div className="mb-6">
+              <button
+                type="button"
+                onClick={stepBack}
+                className="num text-[10px] tracking-[0.22em] uppercase border border-ink-15 hover:border-ink px-3 py-2 transition-colors"
+              >
+                ← voltar
+              </button>
+            </div>
+            <ListaMapeados onNavigate={setView} />
+          </main>
+        ) : (
+          <>
+            <div className="mt-6 flex items-end justify-between gap-6 flex-wrap">
+              <Breadcrumb view={view} onNavigate={setView} />
+              <div className="flex items-center gap-6">
+                <ScaleBar scope={scope} />
+                <button
+                  type="button"
+                  onClick={stepBack}
+                  disabled={view.kind === 'brasil'}
+                  className="num text-[10px] tracking-[0.22em] uppercase border border-ink-15 hover:border-ink px-3 py-2 disabled:opacity-30 disabled:cursor-default transition-colors"
+                >
+                  ← voltar
+                </button>
               </div>
             </div>
-            <div className="flex justify-between mt-2 num text-[9px] tracking-[0.22em] uppercase text-ink-50">
-              <span>folha {String(scopeIndex(scope)).padStart(2, '0')}/04</span>
-              <span>projeção mercator · IBGE</span>
-            </div>
-          </section>
-          <aside className="col-span-12 lg:col-span-4">
-            <SidePanel
-              view={view}
-              hoveredRegion={hoveredRegion}
-              hoveredUF={hoveredUF}
-              hoveredMun={hoveredMun}
-              onHoverRegion={setHoveredRegion}
-              onHoverUF={setHoveredUF}
-              onSelectRegion={onSelectRegion}
-              onSelectUF={onSelectUF}
-              onSelectMun={onSelectMun}
-            />
-          </aside>
-        </main>
+
+            <main className="grid grid-cols-12 gap-6 lg:gap-10 mt-8">
+              <section className="col-span-12 lg:col-span-8 relative">
+                <div className="aspect-square w-full bg-paper-warm hairline relative overflow-hidden">
+                  <CornerLabel pos="tl">A</CornerLabel>
+                  <CornerLabel pos="tr">N</CornerLabel>
+                  <CornerLabel pos="bl">S</CornerLabel>
+                  <CornerLabel pos="br">{scopeShort(scope)}</CornerLabel>
+                  <AtlasMap
+                    view={view}
+                    hoveredRegion={hoveredRegion}
+                    hoveredUF={hoveredUF}
+                    hoveredMun={hoveredMun}
+                    onHoverRegion={setHoveredRegion}
+                    onHoverUF={setHoveredUF}
+                    onHoverMun={setHoveredMun}
+                    onSelectRegion={onSelectRegion}
+                    onSelectUF={onSelectUF}
+                    onSelectMun={onSelectMun}
+                  />
+                  <div className="absolute right-3 bottom-3 opacity-80">
+                    <CompassRose size={72} />
+                  </div>
+                </div>
+                <div className="flex justify-between mt-2 num text-[9px] tracking-[0.22em] uppercase text-ink-50">
+                  <span>folha {String(scopeIndex(scope)).padStart(2, '0')}/04</span>
+                  <span>projeção mercator · IBGE</span>
+                </div>
+              </section>
+              <aside className="col-span-12 lg:col-span-4">
+                <SidePanel
+                  view={view}
+                  hoveredRegion={hoveredRegion}
+                  hoveredUF={hoveredUF}
+                  hoveredMun={hoveredMun}
+                  onHoverRegion={setHoveredRegion}
+                  onHoverUF={setHoveredUF}
+                  onSelectRegion={onSelectRegion}
+                  onSelectUF={onSelectUF}
+                  onSelectMun={onSelectMun}
+                />
+              </aside>
+            </main>
+          </>
+        )}
 
         <footer className="mt-16 pt-6 border-t border-ink-15 flex items-end justify-between gap-6 flex-wrap text-ink-50">
           <div className="num text-[10px] tracking-[0.22em] uppercase">
@@ -290,10 +322,12 @@ function viewToHash(view: View): string {
   if (view.kind === 'brasil') return ''
   if (view.kind === 'regiao') return `#/regiao/${view.regiao}`
   if (view.kind === 'estado') return `#/uf/${view.uf}`
+  if (view.kind === 'lista') return '#/lista'
   return `#/cidade/${view.uf}/${view.municipioId}`
 }
 
 function hashToView(hash: string): View | null {
+  if (hash === '#/lista') return { kind: 'lista' }
   const m = hash.match(/^#\/(regiao|uf|cidade)\/([^/]+)(?:\/(\d+))?/)
   if (!m) return null
   if (m[1] === 'regiao') return { kind: 'regiao', regiao: m[2] as RegionId }
