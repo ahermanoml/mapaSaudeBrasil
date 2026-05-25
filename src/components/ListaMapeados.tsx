@@ -166,6 +166,10 @@ function CityNode({
   }, [opened, cidade.ibge, payload, loading])
 
   const m = MUNICIPIOS_BY_ID[cidade.ibge]
+  const setores = useMemo(
+    () => (payload ? partitionBySetor(payload.estabelecimentos) : null),
+    [payload]
+  )
 
   return (
     <li className="border-l border-ink-15/60">
@@ -181,9 +185,15 @@ function CityNode({
           >
             {cidade.nome}
           </span>
-          {payload && (
+          {setores && (
             <span className="num text-[10px] text-ink-50 tabular-nums">
-              {payload.total_relevante_generalista.toLocaleString('pt-BR')} rel.
+              <span style={{ color: 'var(--verde-600, #4a6b3a)' }}>
+                {setores.publicos.length.toLocaleString('pt-BR')} púb
+              </span>
+              <span className="text-ink-30"> · </span>
+              <span>
+                {setores.privados.length.toLocaleString('pt-BR')} priv
+              </span>
             </span>
           )}
           {m && (
@@ -212,15 +222,67 @@ function CityNode({
               Sem dados CNES para este município.
             </p>
           )}
-          {payload && <ServicosToggles payload={payload} />}
+          {setores && <SetorToggles setores={setores} />}
         </div>
       </details>
     </li>
   )
 }
 
-function ServicosToggles({ payload }: { payload: EstabelecimentosPayload }) {
-  const grupos = useMemo(() => groupByTipo(payload.estabelecimentos), [payload])
+function SetorToggles({ setores }: { setores: SetoresParticionados }) {
+  return (
+    <ul className="flex flex-col gap-1">
+      {setores.publicos.length > 0 && (
+        <SetorNode
+          label="Públicos"
+          items={setores.publicos}
+          color="var(--verde-600, #4a6b3a)"
+        />
+      )}
+      {setores.privados.length > 0 && (
+        <SetorNode label="Privados" items={setores.privados} />
+      )}
+    </ul>
+  )
+}
+
+function SetorNode({
+  label,
+  items,
+  color,
+}: {
+  label: string
+  items: Estabelecimento[]
+  color?: string
+}) {
+  return (
+    <li className="border-l border-ink-15/60">
+      <details className="group">
+        <summary className="cursor-pointer select-none list-none pl-3 pr-2 py-1 flex items-baseline gap-2 hover:bg-paper transition-colors">
+          <Chevron small />
+          <span
+            className="font-display text-sm flex-1"
+            style={{
+              fontVariationSettings: '"opsz" 14',
+              color: color ?? undefined,
+            }}
+          >
+            {label}
+          </span>
+          <span className="num text-[10px] text-ink-50 tabular-nums">
+            {items.length.toLocaleString('pt-BR')}
+          </span>
+        </summary>
+        <div className="pl-3 pr-0 py-1">
+          <ServicosToggles items={items} />
+        </div>
+      </details>
+    </li>
+  )
+}
+
+function ServicosToggles({ items }: { items: Estabelecimento[] }) {
+  const grupos = useMemo(() => groupByTipo(items), [items])
 
   return (
     <ul className="flex flex-col gap-1">
@@ -303,6 +365,21 @@ function groupByUF(rows: ManifestRow[]): UFGroup[] {
   return Array.from(byUF.values()).sort((a, b) =>
     a.nome.localeCompare(b.nome, 'pt-BR')
   )
+}
+
+interface SetoresParticionados {
+  publicos: Estabelecimento[]
+  privados: Estabelecimento[]
+}
+
+function partitionBySetor(items: Estabelecimento[]): SetoresParticionados {
+  const publicos: Estabelecimento[] = []
+  const privados: Estabelecimento[] = []
+  for (const e of items) {
+    if (e.natureza_juridica?.startsWith('1')) publicos.push(e)
+    else privados.push(e)
+  }
+  return { publicos, privados }
 }
 
 interface TipoGroup {
