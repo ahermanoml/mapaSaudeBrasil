@@ -33,6 +33,17 @@ python pipelines/03_filtra_generalista.py \
     --slug uberlandia                                                      # → data/enriquecido/uberlandia.json
 ```
 
+### Batch — todos municípios de uma UF
+
+```bash
+python pipelines/01_baixa_cnes.py GO                                       # → data/cnes/cnes_st_go_{aaaa}{mm}.parquet
+python pipelines/run_all_uf.py --uf GO                                     # processa os 246 municípios de GO
+python pipelines/run_all_uf_rerun.py --uf GO                               # re-roda após pipeline 02 atualizar nomes
+```
+
+`run_all_uf.py` faz merge com o `_index.json` existente, então rodar para uma
+nova UF preserva as entradas das UFs já processadas.
+
 ## Convenções
 
 - IDs de município **no frontend** = IBGE 7 dígitos (com DV). No CNES =

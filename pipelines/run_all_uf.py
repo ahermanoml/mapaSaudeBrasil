@@ -1,18 +1,20 @@
 """
-Processa TODOS os 853 municípios de MG em uma única passada:
+Processa todos os municípios de uma UF em uma única passada:
 
-- Carrega o parquet CNES-ST mais recente uma vez só.
-- Carrega o cache de nomes (pipeline 02) uma vez só.
-- Itera src/data/municipios.json filtrando uf=MG e gera os JSONs em
+- Carrega o parquet CNES-ST mais recente da UF uma vez só.
+- Carrega o cache de nomes (pipeline 02) da UF uma vez só.
+- Itera src/data/municipios.json filtrando pela UF e gera os JSONs em
   data/enriquecido/ + public/data/enriquecido/.
-- Reconstrói public/data/enriquecido/_index.json no fim (uma única gravação).
+- Atualiza public/data/enriquecido/_index.json no fim (uma única gravação),
+  fundindo com entradas existentes de outras UFs.
 
 Reaproveita as funções de pipelines/03_filtra_generalista.py.
 
 Uso:
-    .venv/bin/python pipelines/run_all_mg_full.py
-    .venv/bin/python pipelines/run_all_mg_full.py --parquet data/cnes/cnes_st_mg_202603.parquet
-    .venv/bin/python pipelines/run_all_mg_full.py --limit 20            # smoke test
+    .venv/bin/python pipelines/run_all_uf.py --uf MG
+    .venv/bin/python pipelines/run_all_uf.py --uf GO
+    .venv/bin/python pipelines/run_all_uf.py --uf GO --parquet data/cnes/cnes_st_go_202604.parquet
+    .venv/bin/python pipelines/run_all_uf.py --uf MG --limit 20         # smoke test
 """
 
 from __future__ import annotations
@@ -42,10 +44,11 @@ def slugify(s: str) -> str:
     return s
 
 
-def parquet_mais_recente() -> Path:
-    candidatos = sorted(glob.glob(str(ROOT / "data" / "cnes" / "cnes_st_mg_*.parquet")))
+def parquet_mais_recente(uf: str) -> Path:
+    pattern = str(ROOT / "data" / "cnes" / f"cnes_st_{uf.lower()}_*.parquet")
+    candidatos = sorted(glob.glob(pattern))
     if not candidatos:
-        raise SystemExit("nenhum parquet MG encontrado em data/cnes/")
+        raise SystemExit(f"nenhum parquet {uf} encontrado em data/cnes/")
     return Path(candidatos[-1])
 
 
@@ -98,12 +101,14 @@ def _exporta_sem_index(
 
 
 def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(description="Processa todos os municípios de MG em batch")
-    p.add_argument("--parquet", help="parquet a usar (default: mais recente)")
+    p = argparse.ArgumentParser(description="Processa todos os municípios de uma UF em batch")
+    p.add_argument("--uf", required=True, help="sigla da UF, ex.: MG, GO, SP")
+    p.add_argument("--parquet", help="parquet a usar (default: mais recente da UF)")
     p.add_argument("--limit", type=int, help="processa apenas N municípios (smoke test)")
     args = p.parse_args(argv)
 
-    parquet = Path(args.parquet) if args.parquet else parquet_mais_recente()
+    uf = args.uf.upper()
+    parquet = Path(args.parquet) if args.parquet else parquet_mais_recente(uf)
     if not parquet.is_absolute():
         parquet = ROOT / parquet
 
@@ -116,21 +121,21 @@ def main(argv: list[str] | None = None) -> int:
     df["RELEVANTE_GENERALISTA"] = df["TP_UNID"].isin(pipe03.TIPOS_GENERALISTA)
     print(f"  {len(df)} linhas em {time.time()-t0:.1f}s")
 
-    print("carregando cache de nomes (MG)…")
-    nomes = pipe03._carregar_nomes("MG")
+    print(f"carregando cache de nomes ({uf})…")
+    nomes = pipe03._carregar_nomes(uf)
     print(f"  {len(nomes)} estabelecimentos no cache")
 
     municipios = json.loads(MUNICIPIOS_JSON.read_text(encoding="utf-8"))
-    mg = [m for m in municipios if m["uf"] == "MG"]
+    alvo = [m for m in municipios if m["uf"] == uf]
     if args.limit:
-        mg = mg[: args.limit]
-    print(f"processando {len(mg)} municípios de MG")
+        alvo = alvo[: args.limit]
+    print(f"processando {len(alvo)} municípios de {uf}")
 
-    index_entries: list[dict] = []
+    novas_entradas: list[dict] = []
     falhas: list[str] = []
     sem_dados: list[str] = []
     t_loop = time.time()
-    for i, m in enumerate(mg, 1):
+    for i, m in enumerate(alvo, 1):
         ibge7 = m["id"]
         nome = m["nome"]
         slug = slugify(nome)
@@ -140,22 +145,29 @@ def main(argv: list[str] | None = None) -> int:
             total, rel = _exporta_sem_index(df_mun, ibge7, slug, parquet.name, nomes)
         except Exception as e:
             falhas.append(f"{slug} ({ibge7}): {e}")
-            print(f"  [{i}/{len(mg)}] FALHA {slug}: {e}", file=sys.stderr)
+            print(f"  [{i}/{len(alvo)}] FALHA {slug}: {e}", file=sys.stderr)
             continue
         if total == 0:
             sem_dados.append(slug)
-        index_entries.append({"ibge": ibge7, "slug": slug})
-        if i % 50 == 0 or i == len(mg):
+        novas_entradas.append({"ibge": ibge7, "slug": slug})
+        if i % 50 == 0 or i == len(alvo):
             elapsed = time.time() - t_loop
             taxa = i / elapsed if elapsed else 0
-            print(f"  [{i}/{len(mg)}] {nome:30s} total={total} rel={rel} ({taxa:.1f}/s)")
+            print(f"  [{i}/{len(alvo)}] {nome:30s} total={total} rel={rel} ({taxa:.1f}/s)")
 
-    index_entries.sort(key=lambda r: r["ibge"])
     pipe03.INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
+    if pipe03.INDEX_PATH.exists():
+        existentes = json.loads(pipe03.INDEX_PATH.read_text(encoding="utf-8"))
+    else:
+        existentes = []
+    novos_ibges = {e["ibge"] for e in novas_entradas}
+    merged = [e for e in existentes if e.get("ibge") not in novos_ibges] + novas_entradas
+    merged.sort(key=lambda r: r["ibge"])
     pipe03.INDEX_PATH.write_text(
-        json.dumps(index_entries, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print(f"\nindex reescrito → {pipe03.INDEX_PATH.relative_to(ROOT)} ({len(index_entries)} entradas)")
+    print(f"\nindex atualizado → {pipe03.INDEX_PATH.relative_to(ROOT)} "
+          f"({len(merged)} entradas totais, {len(novas_entradas)} desta rodada)")
 
     if sem_dados:
         print(f"AVISO: {len(sem_dados)} municípios sem nenhuma linha no parquet "
